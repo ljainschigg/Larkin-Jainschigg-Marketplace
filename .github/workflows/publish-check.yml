@@ -1,0 +1,43 @@
+name: Publish Check
+
+# Enforces the shared publish gate (roadmap P5) on every push/PR to main:
+# manifest conventions, no committed secrets, and bump-on-change. Runs the same
+# scripts/publish-check.py that submit-plugin and maintainers run — one gate,
+# every path. mkdocs --strict is enforced separately by validate-docs.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  publish-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so bump-on-change can diff against the base
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Determine base ref
+        id: base
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "ref=origin/${{ github.base_ref }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=${{ github.event.before }}" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Run publish-check
+        run: python3 scripts/publish-check.py --base "${{ steps.base.outputs.ref }}"
+      - name: Verify committed marketplace index is up to date
+        # The github marketplace source reads the committed .claude-plugin/marketplace.json,
+        # so it must stay in sync with plugins/. Fail if a plugin change wasn't regenerated.
+        run: |
+          python3 scripts/generate-marketplace.py
+          if ! git diff --quiet -- .claude-plugin/marketplace.json; then
+            echo "::error::.claude-plugin/marketplace.json is stale. Run 'python3 scripts/generate-marketplace.py' and commit the result."
+            git --no-pager diff -- .claude-plugin/marketplace.json
+            exit 1
+          fi

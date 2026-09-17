@@ -1,0 +1,158 @@
+name: Docs Audit (Strict, non-blocking)
+
+# Runs `mkdocs build --strict` WITHOUT gating deployment.
+#
+# Deployment lives in deploy.yml (build-on-push, plain `mkdocs build`) and runs
+# as an independent workflow, so nothing here can ever block or delay a publish.
+#
+# This workflow's job is early detection + loud reporting:
+#   - On PRs to main:  emit inline annotations so broken links / missing nav
+#                      pages are caught in the diff, before merge.
+#   - On push to main: if strict fails, open or update a single deduped tracking
+#                      issue (label: docs-health) and assign it; auto-close that
+#                      issue when a later push builds clean again.
+#
+# --strict promotes all MkDocs warnings to errors (broken internal links,
+# missing nav pages, unresolvable includes), which a plain build passes silently.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write          # open / update / close the tracking issue
+  pull-requests: write   # inline annotations on PR diffs
+
+env:
+  ISSUE_LABEL: docs-health
+  ISSUE_TITLE: "📋 Docs strict-build is failing on main"
+  # Who gets assigned when a tracking issue is opened. Default: whoever pushed the
+  # breaking commit. To route to fixed maintainers instead, replace with a
+  # comma-separated list of GitHub usernames, e.g. "alice,bob".
+  ASSIGNEES: ${{ github.actor }}
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          # PRs: the PR head. Pushes / manual runs: the triggering commit.
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install requirements
+        run: |
+          python3 -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run mkdocs build --strict
+        id: strict
+        run: |
+          source .venv/bin/activate
+          BUILD_LOG=/tmp/mkdocs-build.log
+          : > "$BUILD_LOG"
+          # Capture strict exit code without letting it fail the step — all
+          # reporting (annotations / issue) is handled by later steps.
+          EXIT_CODE=0
+          mkdocs build --strict 2>&1 | tee "$BUILD_LOG" || EXIT_CODE=$?
+          echo "exit_code=$EXIT_CODE" >> "$GITHUB_OUTPUT"
+          echo "log=$BUILD_LOG" >> "$GITHUB_OUTPUT"
+          if [ "$EXIT_CODE" -eq 0 ]; then
+            echo "Strict build clean."
+          else
+            echo "Strict build reported problems (exit $EXIT_CODE); reporting downstream."
+          fi
+
+      - name: Annotate PR with strict warnings/errors
+        if: github.event_name == 'pull_request'
+        run: |
+          BUILD_LOG="${{ steps.strict.outputs.log }}"
+          [ -f "$BUILD_LOG" ] || exit 0
+          while IFS= read -r line; do
+            if [[ "$line" =~ ^(ERROR|WARNING)[[:space:]]+-[[:space:]](.+):([0-9]+):[[:space:]]*(.+)$ ]]; then
+              LEVEL="${BASH_REMATCH[1],,}"; FILE="${BASH_REMATCH[2]#./}"
+              LINE_NO="${BASH_REMATCH[3]}"; MSG="${BASH_REMATCH[4]}"
+              echo "::${LEVEL} file=${FILE},line=${LINE_NO}::${MSG}"
+            elif [[ "$line" =~ ^(ERROR|WARNING)[[:space:]]+-[[:space:]](.+)$ ]]; then
+              LEVEL="${BASH_REMATCH[1],,}"; MSG="${BASH_REMATCH[2]}"
+              echo "::${LEVEL}::${MSG}"
+            fi
+          done < "$BUILD_LOG"
+
+      - name: Ensure tracking label exists
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "$ISSUE_LABEL" \
+            --color FBCA04 \
+            --description "MkDocs strict-build health on main (managed by docs-audit.yml)" \
+            --force
+
+      - name: Open or update tracking issue (strict failed)
+        if: github.event_name == 'push' && steps.strict.outputs.exit_code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          BUILD_LOG="${{ steps.strict.outputs.log }}"
+          grep -E '^(ERROR|WARNING)' "$BUILD_LOG" > /tmp/findings.txt || true
+
+          {
+            echo "\`mkdocs build --strict\` is failing on \`main\`."
+            echo
+            echo "**Commit:** ${{ github.sha }}"
+            echo "**Run:** ${RUN_URL}"
+            echo
+            echo "The site still deploys (build-on-push is non-strict), so this does **not** block publication — but strict promotes these warnings to errors, meaning broken internal links, missing nav pages, or unresolvable includes:"
+            echo
+            echo '```'
+            cat /tmp/findings.txt
+            echo '```'
+            echo
+            echo "_Managed automatically by \`docs-audit.yml\`: updated on each push to main while failing, and closed when the strict build is green again._"
+          } > /tmp/issue-body.md
+
+          # Dedupe on the label: one open issue per failure episode.
+          EXISTING=$(gh issue list --label "$ISSUE_LABEL" --state open \
+            --json number --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file /tmp/issue-body.md
+            gh issue comment "$EXISTING" --body "Still failing as of ${{ github.sha }} — see run: ${RUN_URL}"
+            echo "Updated existing issue #${EXISTING}"
+          else
+            URL=$(gh issue create --title "$ISSUE_TITLE" --body-file /tmp/issue-body.md --label "$ISSUE_LABEL")
+            echo "Opened $URL"
+            NUM="${URL##*/}"
+            # Assignment is best-effort — never fail issue creation over a bad handle.
+            gh issue edit "$NUM" --add-assignee "$ASSIGNEES" || echo "Could not assign '$ASSIGNEES' (left unassigned)."
+          fi
+
+      - name: Close tracking issue (strict passed)
+        if: github.event_name == 'push' && steps.strict.outputs.exit_code == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          EXISTING=$(gh issue list --label "$ISSUE_LABEL" --state open \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" \
+              --comment "✅ Strict build is green again as of ${{ github.sha }} — see run: ${RUN_URL}. Closing automatically."
+            echo "Closed issue #${EXISTING}"
+          else
+            echo "Strict build clean; no open tracking issue to close."
+          fi

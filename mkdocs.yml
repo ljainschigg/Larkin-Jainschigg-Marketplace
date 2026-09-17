@@ -1,0 +1,125 @@
+site_name: Claude Plugins Marketplace
+site_description: A marketplace of Claude Code plugins
+site_url: https://ljainschigg.github.io/generic-marketplace-2/
+
+docs_dir: docs/
+
+theme:
+  name: "material"
+  highlightjs: true
+  custom_dir: docs/custom_theme
+  language: "en"
+  favicon: assets/favicon.svg
+  logo: assets/logo.svg
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+  features:
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - navigation.tracking
+    - toc.follow
+    - content.action.view
+    - navigation.indexes
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/nav-decor.css
+  - stylesheets/external-link.css
+
+plugins:
+  - search
+  - ezglossary:
+      section_config:
+        - name: demo
+          inline_refs: short
+  - macros:
+      j2_variable_start_string: "{{{"
+      j2_variable_end_string: "}}}"
+  - exclude:
+      glob:
+        - "*.etag"
+  - redirects:
+      redirect_maps:
+
+nav:
+  - Home: index.md
+  - Executive Intelligence:
+    - discourse-tracker: skills/discourse-tracker.md
+    - talk-to-slack: skills/talk-to-slack.md
+    - exec-content-mine: skills/exec-content-mine.md
+  - Investor Relations:
+    - ir-copy-check: skills/ir-copy-check.md
+  - Market Research:
+    - focus-group: skills/focus-group.md
+  - Content Creation:
+    - seo-claude-plugin: skills/seo-claude-plugin.md
+    - subtitle-studio: skills/subtitle-studio.md
+  - Document Processing:
+    - markdown-doc-cleaner: skills/markdown-doc-cleaner.md
+    - linkcheck: skills/linkcheck.md
+  - Knowledge & Research:
+    - researcher: skills/researcher.md
+    - karpathy-kb: skills/karpathy-kb.md
+    - get-pdfs: skills/get-pdfs.md
+  - Fitness:
+    - diet: skills/diet.md
+  - Plugin Security:
+    - secret-resolver: skills/secret-resolver.md
+  - Productivity:
+    - smart-todo: skills/smart-todo.md
+  - Plugin Dev Tools:
+    - Overview: skills/plugin-dev-tools/index.md
+    - plugin-security-check: skills/plugin-dev-tools/plugin-security-check.md
+    - submit-plugin: skills/plugin-dev-tools/submit-plugin.md
+    - plugin-scaffold: skills/plugin-dev-tools/plugin-scaffold.md
+    - plugin-docs-lint: skills/plugin-dev-tools/plugin-docs-lint.md
+    - plugin-diff: skills/plugin-dev-tools/plugin-diff.md
+    - validate-marketplace: skills/plugin-dev-tools/validate-marketplace.md
+  - Contributing a Plugin:
+    - Plugin anatomy: contributing/plugin-anatomy.md
+    - Build & submit a plugin: contributing/build-and-submit.md
+    - Plugin structure: contributing/plugin-structure.md
+  - Example Plugins:
+    - example-skill: skills/example-skill.md
+    - example-mcp-python-skill: skills/example-mcp-python-skill.md
+    - example-mcp-node-skill: skills/example-mcp-node-skill.md
+
+markdown_extensions:
+  - admonition
+  - callouts
+  - tables
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight: {}
+  - pymdownx.inlinehilite: {}
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: "#"
+      toc_depth: 3
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist
+
+extra:
+  base_url: ""
+  version:
+    provider: mike
+    default: stable

@@ -1,0 +1,35 @@
+# Ignore virtual environments
+venv/
+.venv/
+mkdocs-env/
+
+# Ignore extension folders from .vscode
+
+.vscode
+
+# Ignore MkDocs build output
+site/
+
+# Ignore Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Claude Code local session/permission settings (per-user, per-machine)
+.claude/
+
+# Node.js - local dev/testing inside a plugin's server/ dir
+node_modules/
+npm-debug.log*
+
+# Local secrets/config a plugin dev might create while testing
+.env
+.env.*
+
+# OS cruft
+.DS_Store
+Thumbs.db

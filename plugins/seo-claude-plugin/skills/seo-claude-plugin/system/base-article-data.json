@@ -1,0 +1,100 @@
+{
+  "_readme": "Working data structure for one article project. Step 02 copies this file to {project-dir}/article-data.json and populates it from the user's structured brief (see brief-template.md). Later steps read and extend it: step 03 fills brand_perspective; step 06 annotates the outline and allocates research; steps 07-09 draft and edit. Fields below carry empty defaults.",
+
+  "title": "",
+  "description": "",
+
+  "meta_title": "",
+  "meta_description": "",
+  "url_slug": "",
+
+  "target_terms": [],
+  "recommended_word_count": null,
+
+  "links_to_include": [
+    { "anchor_text": "", "url": "", "note": "" }
+  ],
+  "reference_links": [],
+
+  "key_highlights": [],
+  "notes": [],
+
+  "brand_perspective": {
+    "_intent": "The organization's or brand's angle on the topic: positioning, differentiators, and how its products or services relate to the subject. Filled in step 03 from the user's brand profile and/or direct input.",
+    "summary": "",
+    "key_points": []
+  },
+
+  "article_outline": {
+    "_intent": "The proposed article structure the user supplies in their brief, extended with per-section planning notes during drafting.",
+    "h1_title": "",
+    "introduction": {
+      "instructions": "",
+      "final_sentence": ""
+    },
+    "sections": [
+      {
+        "_intent": "One H2 section. Supplied by the user's outline; extended during steps 06-07.",
+        "h2_heading": "",
+        "instructions": "",
+        "h3_headings": [],
+        "pre_written_content": [],
+        "format_requirements": "",
+        "links_in_section": []
+      }
+    ]
+  },
+
+  "research_findings": {
+    "_intent": "Compiled research data points allocated to article sections during step 06.",
+    "data_points": [
+      {
+        "source_url": "",
+        "publication_date": "",
+        "source_type_authority": "",
+        "description": "",
+        "quantitative_value": "",
+        "h2_mapping": [],
+        "brief_relevance_note": ""
+      }
+    ],
+    "tables": [],
+    "images_graphs": [],
+    "meta": {
+      "included_source_urls": [],
+      "note": ""
+    }
+  },
+
+  "quantitative_stats_library": {
+    "_intent": "Optional library of statistics with full source metadata and editorial tracking, if a richer stats pass is run.",
+    "sources": [
+      {
+        "id": "",
+        "title": "",
+        "publisher": "",
+        "url": "",
+        "publication_date": "",
+        "theme_tags": [],
+        "stats": [
+          {
+            "id": "",
+            "quote_text": "",
+            "metric_type": "",
+            "what_it_measures": "",
+            "context": "",
+            "so_what": "",
+            "numeric_values": [],
+            "editorial_decision": { "status": "", "reason": "" }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "topic": "",
+      "generated_at": "",
+      "iteration": null,
+      "note": ""
+    }
+  }
+}

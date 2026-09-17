@@ -1,0 +1,6 @@
+{
+  "kcal":      {"target": 2000, "dir": "under", "label": "Calories", "short": "kcal",    "unit": "kcal"},
+  "protein_g": {"target": 100,  "dir": "min",   "label": "Protein",  "short": "protein", "unit": "g"},
+  "sat_fat_g": {"target": 20,   "dir": "under", "label": "Sat fat",  "short": "sat fat", "unit": "g"},
+  "sodium_mg": {"target": 2300, "dir": "under", "label": "Sodium",   "short": "sodium",  "unit": "mg"}
+}

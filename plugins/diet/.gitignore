@@ -1,0 +1,18 @@
+# Personal data — do not commit
+compliance.csv
+biometrics.csv
+portion-vocabulary.csv
+
+# Personal diet plan documents
+cardiometabolic-diet-plan.md
+evening-meal-plan.md
+
+# Python cache
+__pycache__/
+*.pyc
+
+# API credentials and cached tokens — never commit
+server/secrets.json
+server/tokens.json
+server/gdrive_credentials.json
+server/gdrive_tokens.json

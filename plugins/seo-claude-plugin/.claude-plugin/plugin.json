@@ -1,0 +1,9 @@
+{
+  "name": "seo-claude-plugin",
+  "description": "Produces a complete, SEO-optimized article from a structured brief (title, description, target terms, links, outline) through a 9-step research-and-writing workflow.",
+  "version": "1.2.1",
+  "type": "skill",
+  "consumes": [
+    "researcher"
+  ]
+}

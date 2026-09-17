@@ -1,0 +1,6 @@
+{
+  "name": "markdown-doc-cleaner",
+  "description": "Turns rough notes into a clean, well-structured Markdown document with headings and bullet points.",
+  "version": "1.0.2",
+  "type": "skill"
+}

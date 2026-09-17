@@ -1,0 +1,17 @@
+# Playwright MCP local state — created at runtime, not part of the plugin
+.playwright-mcp/
+
+# Node dependencies — installed by run-server.sh into $CLAUDE_PLUGIN_DATA
+node_modules/
+
+# Claude memory — personal, stays on your machine
+memory/
+
+# Local working notes
+testing-this-workflow.md
+
+# Miscellaneous
+.DS_Store
+*.bak
+*-draft.*
+*-output.*

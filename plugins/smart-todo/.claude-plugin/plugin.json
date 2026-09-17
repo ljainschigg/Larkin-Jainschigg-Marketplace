@@ -1,0 +1,6 @@
+{
+  "name": "smart-todo",
+  "description": "Conversational to-do list manager: paste freeform text to capture tasks, ask natural-language questions to get prioritized reports.",
+  "version": "1.0.4",
+  "type": "skill"
+}

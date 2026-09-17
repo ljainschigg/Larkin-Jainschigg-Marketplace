@@ -1,0 +1,10 @@
+{
+  "name": "get-pdfs",
+  "description": "Download PDFs from gated lead-gen landing pages by filling out access forms and retrieving the files to disk.",
+  "version": "1.0.5",
+  "type": "skill",
+  "mcpServers": "./.mcp.json",
+  "provides": [
+    "gated-pdf-retrieval"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "talk-to-slack",
+  "description": "Generate collaboration and per-person briefing reports from a Slack channel's activity, using Claude Code's built-in Slack connector.",
+  "version": "1.0.2",
+  "type": "skill"
+}

@@ -1,0 +1,6 @@
+{
+  "hello-python": {
+    "command": "uv",
+    "args": ["run", "${CLAUDE_PLUGIN_ROOT}/server/mcp_server.py"]
+  }
+}

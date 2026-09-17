@@ -1,0 +1,4 @@
+# Local test artifacts — never part of the published plugin
+scratch/
+__pycache__/
+*.pyc

@@ -1,0 +1,6 @@
+{
+  "name": "focus-group",
+  "description": "Simulate a focus group of LLM-reified personas to test products, messages, concepts, or designs against representative audience reactions.",
+  "version": "1.0.1",
+  "type": "skill"
+}

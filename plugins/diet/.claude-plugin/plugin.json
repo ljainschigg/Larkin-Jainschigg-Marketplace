@@ -1,0 +1,15 @@
+{
+  "name": "diet",
+  "description": "Track food intake and biometrics against per-user health targets, with loose logging, a self-correcting portion vocabulary, and optional device sync. Person-neutral engine; all personalization lives in the instance's config files.",
+  "version": "2.1.2",
+  "type": "skill",
+  "mcpServers": "./.mcp.json",
+  "requires_credentials": [
+    "personal/fitbit/client_id",
+    "personal/fitbit/client_secret",
+    "personal/withings/client_id",
+    "personal/withings/client_secret",
+    "personal/gdrive/client_id",
+    "personal/gdrive/client_secret"
+  ]
+}

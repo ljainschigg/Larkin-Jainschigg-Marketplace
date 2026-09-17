@@ -1,0 +1,9 @@
+{
+  "name": "example-mcp-node-skill-server",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "figlet": "^1.7.0"
+  }
+}

@@ -1,0 +1,68 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      pushed: ${{ steps.push.outputs.pushed }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install requirements
+        run: |
+          python3 -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build site
+        run: |
+          source .venv/bin/activate
+          mkdocs build
+
+      - name: Generate marketplace.json
+        run: |
+          source .venv/bin/activate
+          python3 scripts/generate-marketplace.py
+
+      - name: Push site to gh-pages
+        id: push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stash built site outside the repo before switching branches
+          cp -r site/ /tmp/site/
+
+          # Check out gh-pages (create it if it doesn't exist)
+          git fetch origin gh-pages || true
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+
+          # Replace contents with freshly built site
+          rsync -a --delete --exclude='.git' /tmp/site/ .
+          git add -A
+          git diff --cached --quiet && echo "pushed=false" >> "$GITHUB_OUTPUT" && exit 0
+          git commit -m "Deploy site from main@${{ github.sha }}"
+          git push origin gh-pages
+          echo "pushed=true" >> "$GITHUB_OUTPUT"

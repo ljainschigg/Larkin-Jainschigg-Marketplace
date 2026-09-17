@@ -1,0 +1,6 @@
+{
+  "hello-node": {
+    "command": "bash",
+    "args": ["${CLAUDE_PLUGIN_ROOT}/run-server.sh"]
+  }
+}

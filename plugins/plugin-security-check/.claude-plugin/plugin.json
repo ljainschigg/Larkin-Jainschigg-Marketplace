@@ -1,0 +1,6 @@
+{
+  "name": "plugin-security-check",
+  "description": "Deep security and compliance inspection of a Claude Code plugin folder: format, credentials, dangerous behaviors, blast radius, and documentation quality.",
+  "version": "1.2.4",
+  "type": "skill"
+}

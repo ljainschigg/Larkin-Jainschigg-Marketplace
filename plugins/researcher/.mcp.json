@@ -1,0 +1,10 @@
+{
+  "playwright": {
+    "command": "npx",
+    "args": ["-y", "@playwright/mcp@latest"]
+  },
+  "extract-pdf": {
+    "command": "bash",
+    "args": ["${CLAUDE_PLUGIN_ROOT}/run-server.sh"]
+  }
+}
