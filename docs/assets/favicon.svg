@@ -1,8 +1,8 @@
-<!-- PLACEHOLDER favicon - replace with real brand mark -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="6" fill="#475569"/>
-  <rect x="11" y="5" width="3.5" height="8" rx="1.5" fill="#fff"/>
-  <rect x="17.5" y="5" width="3.5" height="8" rx="1.5" fill="#fff"/>
-  <rect x="9" y="13" width="14" height="9" rx="2" fill="#fff"/>
-  <rect x="15" y="22" width="2" height="4" rx="1" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="LJ">
+  <style>
+    .bg { fill: #000; }
+    @media (prefers-color-scheme: dark) { .bg { fill: none; } }
+  </style>
+  <rect class="bg" width="32" height="32" rx="7"/>
+  <g transform="translate(2.992 2.748) scale(0.8130)" fill="none" stroke="#fff" stroke-width="4.0" stroke-linecap="round" stroke-linejoin="miter"><path d="M9 6V18H14.4"/><path d="M23 6V20.2C23 24.8 20.9 26.6 18 26.6C15.6 26.6 14 25.4 13.4 23.6"/></g>
 </svg>

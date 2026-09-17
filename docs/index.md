@@ -1,4 +1,4 @@
-# Claude Plugins Marketplace
+# Larkin J.'s Marketplace
 
 This marketplace shares Claude Code plugins — packaged capabilities that extend what Claude Code can do.
 
