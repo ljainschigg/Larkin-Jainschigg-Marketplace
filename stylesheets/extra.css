@@ -1,0 +1,195 @@
+
+:root {
+  --md-primary-fg-color:        #000;
+  --md-accent-fg-color:         #000;
+}
+
+:root > * {
+  /* Footer */
+  --md-footer-bg-color:         #000000;
+}
+
+.md-header {
+  background-color: #000;
+}
+
+.md-version__list {
+  overflow: auto;
+}
+
+ul.video-list {
+  counter-reset: section;
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+}
+
+ul.video-list .video:not(:last-of-type) a {
+  border-bottom: 2px solid #e6e6e6;
+}
+
+ul.video-list a {
+  position: relative;
+  padding: 2rem 2rem 2rem 4.2rem;
+  display: block;
+  box-sizing: border-box;
+}
+
+ul.video-list a .info {
+  padding-top: 0.25rem;
+}
+
+ul.video-list a .info::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  left: 1.5rem;
+  color: black;
+}
+
+ul.video-list a .info > p,
+ul.video-list a .info > span {
+  color: black;
+}
+
+ul.video-list a .info .title {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+ul.video-list a .info .description {
+  margin-bottom: 1rem;
+}
+
+ul.video-list a .info .duration,
+ul.video-list a .info .duration span {
+  color: #6e6e6e;
+}
+
+ul.video-list a:hover,
+ul.video-list a:focus {
+  text-decoration: none;
+}
+
+ul.video-list a:hover {
+  background: #f2f2f2;
+}
+
+ul.video-list a:hover::after {
+  content: '';
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  background: url("/img/play.svg");
+  background-size: 6rem;
+  top: 3rem;
+  left: 8.6rem;
+}
+
+ul.video-list .thumb {
+  max-height: 8.2rem;
+  padding-right: 2rem;
+  position: relative;
+  float: left;
+}
+
+/* site overrides */
+
+.md-typeset h1 {
+  font-size: 1.5rem;
+}
+
+/* Increase font size of site title */
+.md-header__title .md-ellipsis {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+/* Hide the site_name label at the top of the left nav */
+.md-nav__title {
+      display: none;
+    }
+
+@media screen and (min-width: 76.25em) {
+  .md-header__button.md-logo img {
+    height: 1.1rem;
+  }
+}
+
+/* Set the background color of the mobile nav header to black */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background-color: #000 !important;
+  }
+}
+
+/* Style mobile drawer header - center logo and text */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title[for="__drawer"] {
+    background-color: #000 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.75rem 0.5rem 2rem 0.5rem !important;
+    color: #fff !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .md-nav--primary .md-nav__title[for="__drawer"] .md-logo {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    margin: 1.5rem 0 -0.75rem 0 !important;
+    order: -1 !important;
+    padding-top: 1.5rem !important;
+  }
+
+
+}
+
+/* Navigation item spacing — cross-browser fix.
+ *
+ * Material uses margin-top on .md-nav__link for spacing, not .md-nav__item.
+ * Standalone items use <a> tags; nested (submenu) items use <div> tags.
+ * Firefox applies residual UA stylesheet defaults to <a> that it doesn't
+ * apply to <div>, causing uneven spacing. Explicitly zeroing margin and
+ * using padding-top instead gives consistent results across browsers.
+ *
+ * Additionally, Material's collapsed submenu <ul> has padding-bottom: ~8.8px
+ * that bleeds into layout even when hidden (visibility: collapse), making
+ * nested <li> items taller than standalone items. Material's own compensating
+ * margin-bottom has no effect (last-child). We zero it on collapsed navs.
+ *
+ * REVERT: delete this entire block to restore Material defaults.
+ */
+.md-nav__item > .md-nav__link {
+  margin: 0 !important;
+  padding-top: 0.4rem;
+  padding-bottom: 0;
+  align-items: flex-start; /* prevent centering from adding phantom space below wrapped text */
+}
+
+/* Zero the collapsed nav's residual padding-bottom so its height is truly 0. */
+.md-nav__toggle:not(:checked) ~ .md-nav .md-nav__list {
+  padding-bottom: 0 !important;
+}
+
+/* Cancel Material's compensating negative margin-bottom on the collapsed nav.
+   Material sets margin-bottom: -8.8px to cancel the residual nav height, but
+   since we've zeroed the height, the negative margin over-corrects and pulls
+   the next <li> up 8.8px — compressing nested→standalone gaps while
+   standalone→nested gaps remain full size. */
+.md-nav__item--nested > .md-nav {
+  margin-bottom: 0 !important;
+}
+
+/* Normalize spacing for all consecutive item transitions.
+   With the nav margin zeroed above, all items now have a uniform gap.
+   We apply a consistent -8px tightening to every adjacent pair so the
+   visual rhythm matches across nested→nested, standalone→nested,
+   nested→standalone, and standalone→standalone transitions. */
+.md-nav__item + .md-nav__item {
+  margin-top: -8px;
+}

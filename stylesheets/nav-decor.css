@@ -1,0 +1,20 @@
+/* Decorative heading appearance */
+.nav-deco {
+  font-weight: 700;
+  margin-top: 1rem;
+  display: block;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lighter);
+}
+
+/* Makes the decorative nav item truly non-interactive */
+.md-nav__link:has(.nav-deco) {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Removes hover/focus background completely */
+.md-nav__link:has(.nav-deco):hover,
+.md-nav__link:has(.nav-deco):focus {
+  background: none;
+}

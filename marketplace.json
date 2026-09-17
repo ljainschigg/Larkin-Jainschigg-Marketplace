@@ -1,0 +1,248 @@
+{
+  "name": "claude-plugins",
+  "owner": {
+    "name": "Claude Plugins Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "diet",
+      "description": "Track food intake and biometrics against per-user health targets, with loose logging, a self-correcting portion vocabulary, and optional device sync. Person-neutral engine; all personalization lives in the instance's config files.",
+      "version": "2.1.2",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/diet"
+      }
+    },
+    {
+      "name": "discourse-tracker",
+      "description": "Maintains a current-AI-discourse context file at ~/.claude/shared-context/current-discourse.md by doing a shallow weekly scan of frontier labs, practitioners, community signal, infrastructure news, and regulatory updates.",
+      "version": "1.0.3",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/discourse-tracker"
+      }
+    },
+    {
+      "name": "example-mcp-node-skill",
+      "description": "Demonstrates a skill backed by a Node.js MCP server with an external dependency.",
+      "version": "1.1.3",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/example-mcp-node-skill"
+      }
+    },
+    {
+      "name": "example-mcp-python-skill",
+      "description": "Demonstrates a skill backed by a Python MCP server with an external dependency.",
+      "version": "1.1.3",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/example-mcp-python-skill"
+      }
+    },
+    {
+      "name": "example-skill",
+      "description": "Placeholder skill to validate the marketplace pipeline.",
+      "version": "1.0.3",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/example-skill"
+      }
+    },
+    {
+      "name": "exec-content-mine",
+      "description": "Extract article ideas and quotable clip moments from an executive or SME conversation transcript, tuned to your organization's context.",
+      "version": "1.0.3",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/exec-content-mine"
+      }
+    },
+    {
+      "name": "focus-group",
+      "description": "Simulate a focus group of LLM-reified personas to test products, messages, concepts, or designs against representative audience reactions.",
+      "version": "1.0.1",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/focus-group"
+      }
+    },
+    {
+      "name": "get-pdfs",
+      "description": "Download PDFs from gated lead-gen landing pages by filling out access forms and retrieving the files to disk.",
+      "version": "1.0.5",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/get-pdfs"
+      }
+    },
+    {
+      "name": "ir-copy-check",
+      "description": "Investor-relations copy check: critique or rewrite outward-facing marketing content against messaging/IR guidance and a filed Form 10-K that you supply, citing your resources for every finding.",
+      "version": "1.0.0",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/ir-copy-check"
+      }
+    },
+    {
+      "name": "karpathy-kb",
+      "description": "Sets up and maintains a citation-tracked local knowledge base using the Karpathy-loop workflow. Compile raw sources (transcripts, Slack, decks, docs) into a structured wiki where every claim carries full provenance. Query it, lint it, review conflicts, elicit tacit knowledge, and keep it current.",
+      "version": "1.3.3",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/karpathy-kb"
+      }
+    },
+    {
+      "name": "linkcheck",
+      "description": "Scan a versioned MkDocs documentation site for broken links and save a full report.",
+      "version": "1.0.3",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/linkcheck"
+      }
+    },
+    {
+      "name": "markdown-doc-cleaner",
+      "description": "Turns rough notes into a clean, well-structured Markdown document with headings and bullet points.",
+      "version": "1.0.2",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/markdown-doc-cleaner"
+      }
+    },
+    {
+      "name": "plugin-diff",
+      "description": "Plain-language summary of what changed between two versions of a Claude Code plugin, covering behavior, security posture, and documentation.",
+      "version": "1.0.2",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/plugin-diff"
+      }
+    },
+    {
+      "name": "plugin-docs-lint",
+      "description": "Fast check that a plugin's README.md meets the marketplace's documentation standards.",
+      "version": "1.1.2",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/plugin-docs-lint"
+      }
+    },
+    {
+      "name": "plugin-scaffold",
+      "description": "Generates a complete, correctly structured Claude Code plugin directory from a plain-language description.",
+      "version": "1.2.4",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/plugin-scaffold"
+      }
+    },
+    {
+      "name": "plugin-security-check",
+      "description": "Deep security and compliance inspection of a Claude Code plugin folder: format, credentials, dangerous behaviors, blast radius, and documentation quality.",
+      "version": "1.2.4",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/plugin-security-check"
+      }
+    },
+    {
+      "name": "researcher",
+      "description": "Web research assistant: discovers, fetches, and synthesizes sources including PDFs behind gated landing pages.",
+      "version": "1.1.7",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/researcher"
+      }
+    },
+    {
+      "name": "secret-resolver",
+      "description": "Provider-agnostic per-user secret broker for platform tools: get/set OAuth secrets, tokens, and API keys via the OS keyring, pass, or a locked-file fallback, keyed by <domain>/<service>/<field>.",
+      "version": "0.2.1",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/secret-resolver"
+      }
+    },
+    {
+      "name": "seo-claude-plugin",
+      "description": "Produces a complete, SEO-optimized article from a structured brief (title, description, target terms, links, outline) through a 9-step research-and-writing workflow.",
+      "version": "1.2.1",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/seo-claude-plugin"
+      }
+    },
+    {
+      "name": "smart-todo",
+      "description": "Conversational to-do list manager: paste freeform text to capture tasks, ask natural-language questions to get prioritized reports.",
+      "version": "1.0.4",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/smart-todo"
+      }
+    },
+    {
+      "name": "submit-plugin",
+      "description": "Full PR submission workflow for the Claude Plugins Marketplace: runs security check, clones repo, creates branch, and files a pull request with the full review report.",
+      "version": "1.2.2",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/submit-plugin"
+      }
+    },
+    {
+      "name": "subtitle-studio",
+      "description": "Transcribe video and audio to subtitles locally with Whisper, then convert, resync, fix, and burn in \u2014 with optional SubtitleEdit power-ups when it is installed.",
+      "version": "0.2.4",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/subtitle-studio"
+      }
+    },
+    {
+      "name": "talk-to-slack",
+      "description": "Generate collaboration and per-person briefing reports from a Slack channel's activity, using Claude Code's built-in Slack connector.",
+      "version": "1.0.2",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/talk-to-slack"
+      }
+    },
+    {
+      "name": "validate-marketplace",
+      "description": "Curator tool: walks all plugins in a marketplace repository and reports format compliance issues, missing files, and documentation gaps.",
+      "version": "1.2.4",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ljainschigg/generic-marketplace-2.git",
+        "path": "plugins/validate-marketplace"
+      }
+    }
+  ]
+}
