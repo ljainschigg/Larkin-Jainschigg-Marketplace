@@ -1,6 +1,6 @@
 {
   "name": "exec-content-mine",
   "description": "Extract article ideas and quotable clip moments from an executive or SME conversation transcript, tuned to your organization's context.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "skill"
 }

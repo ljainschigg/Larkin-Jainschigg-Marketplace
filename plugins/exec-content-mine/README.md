@@ -31,6 +31,6 @@ The extraction logic is prompt-only and organization-neutral. It reads `org-cont
 
 | | |
 |---|---|
-| **Version** | 1.0.4 |
+| **Version** | 1.0.5 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
