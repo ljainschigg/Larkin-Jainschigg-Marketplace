@@ -1,6 +1,6 @@
 {
   "name": "ir-copy-check",
   "description": "Investor-relations copy check: critique or rewrite outward-facing marketing content against messaging/IR guidance and a filed Form 10-K that you supply, citing your resources for every finding.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "skill"
 }

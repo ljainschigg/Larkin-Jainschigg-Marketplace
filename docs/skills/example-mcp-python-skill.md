@@ -15,7 +15,7 @@ Demonstrates a skill backed by a Python MCP server. When invoked, it calls a run
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -46,7 +46,7 @@ Dependencies (`mcp`, `cowsay`) are declared inline in the script using [PEP 723]
 
 | | |
 |---|---|
-| **Version** | 1.1.3 |
+| **Version** | 1.1.4 |
 | **Runtime** | Python via `uv` |
 | **External dependency** | `cowsay` |
 | **Maintained by** | Claude Plugins Marketplace |

@@ -79,7 +79,7 @@ Updating an existing plugin later? Any content change requires a **semver versio
 
 ## Conventions your plugin must satisfy
 
-These are enforced by the tooling and CI. The complete reference is **[Plugin anatomy](plugin-anatomy.md)** (the terse enforcement checklist is [`CONVENTIONS.md`](https://github.com/ljainschigg/generic-marketplace-2/blob/main/CONVENTIONS.md) in the repo):
+These are enforced by the tooling and CI. The complete reference is **[Plugin anatomy](plugin-anatomy.md)** (the terse enforcement checklist is [`CONVENTIONS.md`](https://github.com/ljainschigg/Larkin-Jainschigg-Marketplace/blob/main/CONVENTIONS.md) in the repo):
 
 - **Manifest:** `name` (== folder name), `description`, `version` (semver), and **`type`** (`skill` \| `tool` \| `app`). This repo is canonical — plugins are edited in place; there is no external `source_of_truth`.
 - **Setup for external dependencies:** a `setup` skill or inline preflight that checks every runtime prerequisite (Conventions §5), with the README's `## Prerequisites` matching it exactly.

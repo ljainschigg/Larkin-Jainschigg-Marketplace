@@ -1,7 +1,7 @@
 {
   "name": "subtitle-studio",
   "description": "Transcribe video and audio to subtitles locally with Whisper, then convert, resync, fix, and burn in \u2014 with optional SubtitleEdit power-ups when it is installed.",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "type": "skill",
   "mcpServers": "./.mcp.json"
 }

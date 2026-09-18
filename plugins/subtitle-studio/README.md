@@ -34,7 +34,7 @@ Optional power-ups, auto-detected if present:
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -124,7 +124,7 @@ chosen Whisper model (cached thereafter).
 
 | | |
 |---|---|
-| **Version** | 0.2.4 |
+| **Version** | 0.2.5 |
 | **Type** | skill (MCP-backed, credential-free, fully local) |
 | **Runtime** | Python via `uv` |
 | **Core dependencies** | `mcp`, `faster-whisper`, `pysubs2` |

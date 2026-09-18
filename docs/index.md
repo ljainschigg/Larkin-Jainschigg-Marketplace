@@ -27,7 +27,7 @@ You need **Claude Code** installed and running. If you haven't set it up yet, it
 Add the plugins marketplace to your Claude Code installation. Open a terminal, start Claude Code, and run:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 You only need to do this once. Claude Code will remember it.
@@ -35,7 +35,7 @@ You only need to do this once. Claude Code will remember it.
 ### Do you need to authenticate?
 
 Adding the marketplace and installing plugins both `git clone` the
-`ljainschigg/generic-marketplace-2` repository. Whether you need
+`ljainschigg/Larkin-Jainschigg-Marketplace` repository. Whether you need
 to set up authentication depends on whether that repository is **public** or
 **private**.
 
@@ -50,7 +50,7 @@ to set up authentication depends on whether that repository is **public** or
     If the marketplace repository is private (for example, an internal fork),
     you need two things:
 
-    1. **Read access** to `ljainschigg/generic-marketplace-2`
+    1. **Read access** to `ljainschigg/Larkin-Jainschigg-Marketplace`
        (ask a maintainer to add you).
     2. **Git configured to authenticate to GitHub.** Claude Code runs git
        non-interactively, so without configured credentials the clone fails with

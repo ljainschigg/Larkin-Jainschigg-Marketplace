@@ -19,7 +19,7 @@ A Claude Code plugin for web research. Discovers and retrieves sources on any to
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -66,7 +66,7 @@ Research output is saved to `$CLAUDE_PLUGIN_DATA/projects/<project-name>/`.
 
 | | |
 |---|---|
-| **Version** | 1.1.8 |
+| **Version** | 1.1.9 |
 | **Runtime** | Node.js via `npm` |
 | **MCP servers** | `playwright` (npx), `extract-pdf` (bundled Node.js server) |
 | **Maintained by** | Claude Plugins Marketplace |

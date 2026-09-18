@@ -15,7 +15,7 @@ Demonstrates a skill backed by a Node.js MCP server. When invoked, it calls a ru
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -52,7 +52,7 @@ A wrapper script (`run-server.sh`) handles dependency installation on first run,
 
 | | |
 |---|---|
-| **Version** | 1.1.3 |
+| **Version** | 1.1.4 |
 | **Runtime** | Node.js via `npm` |
 | **External dependency** | `figlet` |
 | **Maintained by** | Claude Plugins Marketplace |

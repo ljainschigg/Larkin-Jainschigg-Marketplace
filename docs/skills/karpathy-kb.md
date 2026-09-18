@@ -17,7 +17,7 @@ The core invariant: the wiki records what people *believe*, not settled truth. C
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin and verify the runtime:

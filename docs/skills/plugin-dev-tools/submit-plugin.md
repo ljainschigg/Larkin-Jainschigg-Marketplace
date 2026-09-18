@@ -62,6 +62,6 @@ Every PR filed by `submit-plugin` contains a structured description so reviewers
 
 | | |
 |---|---|
-| **Version** | 1.2.2 |
+| **Version** | 1.2.3 |
 | **Requires** | `plugin-security-check` |
 | **Maintained by** | Claude Plugins Marketplace |

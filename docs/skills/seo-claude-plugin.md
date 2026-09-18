@@ -18,7 +18,7 @@ You bring the brief and (optionally) a brand profile; the plugin brings the work
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -69,7 +69,7 @@ Your brand facts, product knowledge, competitor lists, and reference documentati
 
 | | |
 |---|---|
-| **Version** | 1.2.2 |
+| **Version** | 1.2.3 |
 | **Type** | skill |
 | **Depends on** | `researcher` |
 | **Project data** | the current working directory |

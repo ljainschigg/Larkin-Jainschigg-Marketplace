@@ -25,9 +25,9 @@ Evaluate against each category below, then produce the report described at the e
 - **[Conventions]** If the plugin has `.mcp.json`, or shells out to a system binary beyond what its own runtime auto-installs (`git`, `gh`, `ffmpeg`, `pass`, a browser, etc.), it has a `skills/setup/SKILL.md` or a documented inline Step 0 preflight in its main `SKILL.md` checking the same things its README's `## Prerequisites` section lists
   - *🚫 BLOCKER — no rollout warning period for this one. See `CONVENTIONS.md` §5.*
 - **[Conventions]** If the plugin uses credentials (declares `requires_credentials`, or its code reads API keys / OAuth secrets / tokens), it follows the credential standard: keys declared in `requires_credentials`; read **server-side** in the order env `<SERVICE>_<FIELD>` → `secret-resolver` → fail loud (a raw secret is never surfaced to the model); and its `setup` runs the credential negotiation (detect `secret-resolver` → ask resolver-or-bring-your-own → instruct storing each key via stdin/env → confirm the read path). Flag a credentialed plugin missing the declaration, the server-side env/resolver read path, or the setup negotiation.
-  - *🚫 BLOCKER. See `CONVENTIONS.md` §3 and [Plugin anatomy → Credentials](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/#credentials).*
+  - *🚫 BLOCKER. See `CONVENTIONS.md` §3 and [Plugin anatomy → Credentials](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/#credentials).*
 - **[Conventions]** If the plugin writes the user's own data (PII — research, transcripts, logs, drafts, downloads, cloned repos) into a project/working folder, its skill ensures that data is `.gitignore`d (creates/appends `.gitignore` for the data/output paths and any cloned material) and never `git add`/commits it. PII lives in a user-owned location — never in the plugin, never via `secret-resolver`. Flag a data-writing plugin with no `.gitignore` step.
-  - *🚫 BLOCKER. See `CONVENTIONS.md` §3 and [Plugin anatomy → Personal data](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/#personal-data-pii).*
+  - *🚫 BLOCKER. See `CONVENTIONS.md` §3 and [Plugin anatomy → Personal data](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/#personal-data-pii).*
 
 ## Credential and secret exposure
 

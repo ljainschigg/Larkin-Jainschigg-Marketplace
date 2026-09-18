@@ -7,7 +7,7 @@ Read this alongside the other two contributing pages, which cover the *how* rath
 - **[Plugin structure](plugin-structure.md)** — the required directory layout and the rules the loader enforces.
 - **[Build & submit a plugin](build-and-submit.md)** — the end-to-end process (scaffold → verify → security-check → PR).
 
-The terse, tooling-facing version of the enforceable rules lives in [`CONVENTIONS.md`](https://github.com/ljainschigg/generic-marketplace-2/blob/main/CONVENTIONS.md) in the repo; this page is the complete narrative. The two must agree.
+The terse, tooling-facing version of the enforceable rules lives in [`CONVENTIONS.md`](https://github.com/ljainschigg/Larkin-Jainschigg-Marketplace/blob/main/CONVENTIONS.md) in the repo; this page is the complete narrative. The two must agree.
 
 ---
 

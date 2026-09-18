@@ -15,7 +15,7 @@ Scans a versioned MkDocs documentation site for broken links and saves a full re
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -47,7 +47,7 @@ It then runs the scan with live progress, saves the full report to your chosen f
 
 | | |
 |---|---|
-| **Version** | 1.0.3 |
+| **Version** | 1.0.4 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Runtime** | Python via `uv` (dependencies declared inline in `linkcheck.py`) |

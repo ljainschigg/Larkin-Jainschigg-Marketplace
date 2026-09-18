@@ -15,7 +15,7 @@ Discovers all published versions via `versions.json`, enumerates pages from the 
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -47,7 +47,7 @@ A full multi-version scan typically takes 5–15 minutes depending on site size.
 
 | | |
 |---|---|
-| **Version** | 1.0.3 |
+| **Version** | 1.0.4 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Runtime** | Python via `uv` (dependencies declared inline in `linkcheck.py`) |

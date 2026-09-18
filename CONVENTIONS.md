@@ -1,6 +1,6 @@
 # Plugin Conventions (enforceable)
 
-*The rules every plugin obeys. This is the terse checklist the tooling enforces; the complete narrative — every concern a plugin addresses, required or optional — is the on-site [Plugin anatomy](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/) reference (keep the two in agreement). Designed to **extend the skills you already have** rather than add new machinery.*
+*The rules every plugin obeys. This is the terse checklist the tooling enforces; the complete narrative — every concern a plugin addresses, required or optional — is the on-site [Plugin anatomy](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/) reference (keep the two in agreement). Designed to **extend the skills you already have** rather than add new machinery.*
 
 ---
 
@@ -25,8 +25,8 @@ Any content change to a published plugin **requires a semver bump** — enforced
 - **Read order at use time:** env var `<SERVICE>_<FIELD>` (bring-your-own) → `secret-resolver` (`get_secret(...)`, provider-agnostic) → fail loud. Use secrets **server-side only** — never surface a raw value to the model.
 - **Store time:** value entered by the user via stdin (`secret-resolver set … --stdin`), never argv, never necessarily through the model.
 - **Setup negotiation:** a credentialed plugin's `setup` must detect `secret-resolver`, ask whether to use it or a bring-your-own solution, instruct the user to get each `requires_credentials` key into the chosen one, and confirm the read path works.
-- **Personal data (PII) ≠ credentials.** The user's own data (contact info, logs, transcripts, gathered research, drafts) is not a vault secret. Store it in a user-owned location — the project/working folder for project-scoped data, or a per-user app-data dir for cross-session config — and **instruct the AI to `.gitignore` any of it written into a folder that could be a git repo** (and never commit it). Credentials never live in a PII file. Full narrative: [Plugin anatomy → Personal data](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/#personal-data-pii).
-- Full narrative + rationale: [Plugin anatomy → Credentials](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/#credentials).
+- **Personal data (PII) ≠ credentials.** The user's own data (contact info, logs, transcripts, gathered research, drafts) is not a vault secret. Store it in a user-owned location — the project/working folder for project-scoped data, or a per-user app-data dir for cross-session config — and **instruct the AI to `.gitignore` any of it written into a folder that could be a git repo** (and never commit it). Credentials never live in a PII file. Full narrative: [Plugin anatomy → Personal data](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/#personal-data-pii).
+- Full narrative + rationale: [Plugin anatomy → Credentials](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/#credentials).
 
 ## 4. Classification (skill vs tool vs app)
 

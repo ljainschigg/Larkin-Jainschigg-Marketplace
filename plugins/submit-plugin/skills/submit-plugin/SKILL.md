@@ -75,7 +75,7 @@ Record the response for the PR.
 
 ```bash
 rm -rf /tmp/cms-submit
-git clone https://github.com/ljainschigg/generic-marketplace-2.git /tmp/cms-submit
+git clone https://github.com/ljainschigg/Larkin-Jainschigg-Marketplace.git /tmp/cms-submit
 ```
 
 ---

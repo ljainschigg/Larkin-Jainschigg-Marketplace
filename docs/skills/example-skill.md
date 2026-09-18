@@ -9,7 +9,7 @@ A placeholder skill used to validate the Claude Plugins Marketplace pipeline.
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -32,5 +32,5 @@ Claude will confirm that the marketplace pipeline is working correctly.
 
 | | |
 |---|---|
-| **Version** | 1.0.3 |
+| **Version** | 1.0.4 |
 | **Maintained by** | Claude Plugins Marketplace |

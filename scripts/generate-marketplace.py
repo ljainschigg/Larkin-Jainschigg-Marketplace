@@ -10,11 +10,11 @@ import json
 import os
 import sys
 
-REPO = "https://github.com/ljainschigg/generic-marketplace-2.git"
+REPO = "https://github.com/ljainschigg/Larkin-Jainschigg-Marketplace.git"
 MARKETPLACE_NAME = "claude-plugins"
 PLUGINS_DIR = "plugins"
 # Canonical index, committed to main. Consumed by
-# `/plugin marketplace add ljainschigg/generic-marketplace-2`
+# `/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace`
 # (Claude Code clones the repo and reads this file with the user's git creds).
 CANONICAL_PATH = os.path.join(".claude-plugin", "marketplace.json")
 # Copy served by the mkdocs site on gh-pages; only written when a build exists.

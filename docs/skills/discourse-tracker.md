@@ -11,7 +11,7 @@ Any other skill can read from `~/.claude/shared-context/current-discourse.md` to
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:

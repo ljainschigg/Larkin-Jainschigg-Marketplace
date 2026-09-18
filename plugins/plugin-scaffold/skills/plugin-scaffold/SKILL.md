@@ -154,7 +154,7 @@ No separate `setup` skill needed — add a Step 0 to the main `SKILL.md` that ch
 
 ### For plugins that need credentials (reach a system of record / artifacts on the user's behalf)
 
-Any plugin that uses a user's API key, OAuth secret, or token must follow the credential standard ([Plugin anatomy → Credentials](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/#credentials); `CONVENTIONS.md` §3). Emit all of this:
+Any plugin that uses a user's API key, OAuth secret, or token must follow the credential standard ([Plugin anatomy → Credentials](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/#credentials); `CONVENTIONS.md` §3). Emit all of this:
 
 1. **Declare the keys** in `plugin.json` → `requires_credentials`, as `<domain>/<service>/<field>` (e.g. `["personal/<service>/client_id", "personal/<service>/client_secret"]`). Never store values.
 2. **Read them server-side, in this order,** inside the plugin's MCP server / bundled script — never surface a raw secret to the model:
@@ -173,7 +173,7 @@ The tool is available (`secret-resolver`) and recommended — but the standard i
 
 ### For plugins that write user data / PII (research, transcripts, logs, drafts, outputs)
 
-PII is *not* credentials — don't route it through `secret-resolver`. It's the user's own data, which the model does work with; the control is location + keeping it out of version control ([Plugin anatomy → Personal data](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/#personal-data-pii)). Emit this:
+PII is *not* credentials — don't route it through `secret-resolver`. It's the user's own data, which the model does work with; the control is location + keeping it out of version control ([Plugin anatomy → Personal data](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/#personal-data-pii)). Emit this:
 
 - Store project-scoped data in the user's **project/working folder** (`<project-dir>/resources/`, `<project-dir>/outputs/`, etc.); cross-session profile/config can go in `${CLAUDE_PLUGIN_DATA}` (outside any repo). Never in the plugin.
 - Add a step to the skill that **ensures a `.gitignore`** covers the data/output paths (and any cloned reference material) whenever the plugin writes into a folder that could be a git repo — create or append it — and **never `git add`/commit** the user's data.

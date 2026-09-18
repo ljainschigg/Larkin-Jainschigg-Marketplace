@@ -89,5 +89,5 @@ The report closes with an overall verdict: **PASS**, **PASS WITH WARNINGS**, or 
 
 | | |
 |---|---|
-| **Version** | 1.2.4 |
+| **Version** | 1.2.5 |
 | **Maintained by** | Claude Plugins Marketplace |

@@ -11,7 +11,7 @@ Turn an executive or SME conversation transcript into publishable content ideas:
 ## Install
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 /plugin install exec-content-mine@claude-plugins
 ```
 
@@ -31,6 +31,6 @@ The extraction logic is prompt-only and organization-neutral. It reads `org-cont
 
 | | |
 |---|---|
-| **Version** | 1.0.3 |
+| **Version** | 1.0.4 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |

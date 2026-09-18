@@ -21,8 +21,8 @@ A `Makefile` in the repo root handles setup and serving for you. You don't need 
 1. Clone repo and cd to its root:
 
     ```bash
-    git clone git@github.com:ljainschigg/generic-marketplace-2.git
-    cd generic-marketplace-2
+    git clone git@github.com:ljainschigg/Larkin-Jainschigg-Marketplace.git
+    cd Larkin-Jainschigg-Marketplace
     ```
 
 2. See available make targets:
@@ -85,7 +85,7 @@ All header text should be capitalized.
 
 # Plugin Development Guide
 
-> **The canonical, always-current guide lives on the docs site:** [Plugin anatomy](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-anatomy/) (what every plugin needs), [Plugin structure](https://ljainschigg.github.io/generic-marketplace-2/contributing/plugin-structure/) (directory layout), and [Build & submit a plugin](https://ljainschigg.github.io/generic-marketplace-2/contributing/build-and-submit/) (the process). The enforceable rules are in [`CONVENTIONS.md`](CONVENTIONS.md). The primer below covers the basics and the MCP server patterns; where it and the docs site differ, the docs site wins.
+> **The canonical, always-current guide lives on the docs site:** [Plugin anatomy](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-anatomy/) (what every plugin needs), [Plugin structure](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/plugin-structure/) (directory layout), and [Build & submit a plugin](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/build-and-submit/) (the process). The enforceable rules are in [`CONVENTIONS.md`](CONVENTIONS.md). The primer below covers the basics and the MCP server patterns; where it and the docs site differ, the docs site wins.
 
 This repo is a monorepo of Claude Code plugins. Each plugin lives under `plugins/<plugin-name>/` and is independently installable via the marketplace. CI automatically discovers plugins and regenerates `marketplace.json` on every push to `main`.
 
@@ -350,7 +350,7 @@ Return the result exactly as the tool returns it.
 
 There are two paths. The full, step-by-step walkthrough (prerequisites, the Plugin
 Dev Tools, verification, and what happens after you submit) lives in the docs:
-**[Build & submit a plugin](https://ljainschigg.github.io/generic-marketplace-2/contributing/build-and-submit/)**.
+**[Build & submit a plugin](https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/build-and-submit/)**.
 
 **Contributors (default) — open a PR:**
 1. Scaffold with `/plugin-scaffold`, build your skill, then run `/plugin-docs-lint`

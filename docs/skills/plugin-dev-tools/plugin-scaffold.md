@@ -61,5 +61,5 @@ The generated files are stubs — they compile and pass format checks, but you n
 
 | | |
 |---|---|
-| **Version** | 1.2.4 |
+| **Version** | 1.2.5 |
 | **Maintained by** | Claude Plugins Marketplace |

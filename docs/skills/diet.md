@@ -20,7 +20,7 @@ Templates for the first three ship in `templates/`; `/diet setup` copies them.
 ## Install
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 /plugin install diet@claude-plugins
 ```
 
@@ -81,6 +81,6 @@ Every invocation is self-contained: the engine reads your instance config and pr
 
 | | |
 |---|---|
-| **Version** | 2.1.3 |
+| **Version** | 2.1.4 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |

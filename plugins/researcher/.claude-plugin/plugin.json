@@ -1,7 +1,7 @@
 {
   "name": "researcher",
   "description": "Web research assistant: discovers, fetches, and synthesizes sources including PDFs behind gated landing pages.",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "type": "skill",
   "mcpServers": "./.mcp.json",
   "provides": [

@@ -17,7 +17,7 @@ Generate reports from a Slack channel's activity using Claude Code's **built-in 
 If you haven't added the marketplace yet:
 
 ```
-/plugin marketplace add ljainschigg/generic-marketplace-2
+/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
 ```
 
 Then install the plugin:
@@ -56,7 +56,7 @@ Each skill drives the built-in Slack connector directly (`slack_search_channels`
 
 | | |
 |---|---|
-| **Version** | 1.0.3 |
+| **Version** | 1.0.4 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Dependency** | Claude Code built-in Slack connector (authenticated) |
