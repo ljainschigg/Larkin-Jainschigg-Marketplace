@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://ljainschigg.github.io/generic-marketplace-2/contributing/build-and-submit/">
+        <link rel="canonical" href="https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/build-and-submit/">
       
       
         <link rel="prev" href="../plugin-anatomy/">
@@ -71,14 +71,14 @@
   <meta property="og:site_name" content="Larkin J.'s Marketplace">
   <meta property="og:title" content="Build & submit a plugin – Larkin J.'s Marketplace">
   <meta property="og:description" content="A marketplace of Claude Code plugins">
-  <meta property="og:url" content="https://ljainschigg.github.io/generic-marketplace-2/contributing/build-and-submit/">
-  <meta property="og:image" content="https://ljainschigg.github.io/generic-marketplace-2/assets/og-image.png">
+  <meta property="og:url" content="https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/contributing/build-and-submit/">
+  <meta property="og:image" content="https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Build & submit a plugin – Larkin J.'s Marketplace">
   <meta name="twitter:description" content="A marketplace of Claude Code plugins">
-  <meta name="twitter:image" content="https://ljainschigg.github.io/generic-marketplace-2/assets/og-image.png">
+  <meta name="twitter:image" content="https://ljainschigg.github.io/Larkin-Jainschigg-Marketplace/assets/og-image.png">
 
   </head>
   
@@ -1770,7 +1770,7 @@
 <p>Updating an existing plugin later? Any content change requires a <strong>semver version bump</strong> (bump-on-change) — CI fails a changed plugin that wasn't bumped. <a href="../../skills/plugin-dev-tools/plugin-diff/"><code>/plugin-diff</code></a> summarizes what changed between two versions.</p>
 <hr />
 <h2 id="conventions-your-plugin-must-satisfy">Conventions your plugin must satisfy<a class="headerlink" href="#conventions-your-plugin-must-satisfy" title="Permanent link">#</a></h2>
-<p>These are enforced by the tooling and CI. The complete reference is <strong><a href="../plugin-anatomy/">Plugin anatomy</a></strong> (the terse enforcement checklist is <a href="https://github.com/ljainschigg/generic-marketplace-2/blob/main/CONVENTIONS.md"><code>CONVENTIONS.md</code></a> in the repo):</p>
+<p>These are enforced by the tooling and CI. The complete reference is <strong><a href="../plugin-anatomy/">Plugin anatomy</a></strong> (the terse enforcement checklist is <a href="https://github.com/ljainschigg/Larkin-Jainschigg-Marketplace/blob/main/CONVENTIONS.md"><code>CONVENTIONS.md</code></a> in the repo):</p>
 <ul>
 <li><strong>Manifest:</strong> <code>name</code> (== folder name), <code>description</code>, <code>version</code> (semver), and <strong><code>type</code></strong> (<code>skill</code> | <code>tool</code> | <code>app</code>). This repo is canonical — plugins are edited in place; there is no external <code>source_of_truth</code>.</li>
 <li><strong>Setup for external dependencies:</strong> a <code>setup</code> skill or inline preflight that checks every runtime prerequisite (Conventions §5), with the README's <code>## Prerequisites</code> matching it exactly.</li>
