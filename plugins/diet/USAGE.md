@@ -30,8 +30,6 @@ Describe what you ate. Grams are best but entirely optional — vague amounts ar
 | "a tablespoon" (oil, condiment) | 14g |
 | "a cup" (liquid) | 240ml |
 
-Anything outside the table gets a best-guess estimate noted in the log. Correct anything that looks off.
-
 Anything outside the table gets a best-guess estimate noted in the log — correct anything that looks off, and the portion vocabulary self-corrects over time.
 
 > *"a big salad with some salmon and a handful of nuts"*
@@ -41,9 +39,9 @@ The engine reads today's existing rows, skips duplicates, updates the running `d
 
 ### `/diet biometrics`
 Report weight, BP, glucose, or lipids.
-> *"weight 194 lbs"* → logs weight (+ BMI if a height is set)
-> *"BP 118/74"* → logs systolic + diastolic
-> *"fasted glucose 91"*
+> *"weight <N> lbs"* → logs weight (+ BMI if a height is set)
+> *"BP <systolic>/<diastolic>"* → logs systolic + diastolic
+> *"fasted glucose <N>"*
 
 ### `/diet summary`
 Today's full gap analysis from existing rows. No new logging.

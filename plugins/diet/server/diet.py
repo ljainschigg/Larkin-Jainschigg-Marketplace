@@ -43,15 +43,14 @@ BIO_COLS = ["date", "time", "metric", "value", "unit", "notes"]
 SUM_COLS = ["kcal", "protein_g", "sat_fat_g", "soy_protein_g", "omega3_g",
             "soluble_fiber_g", "sodium_mg"]
 
-# Fallback if targets.json is absent; mirrors the SKILL.md target table.
+# Fallback if targets.json is absent; mirrors templates/targets.json. These are
+# generic starting values, not anyone's prescription — the instance's own
+# targets.json is the source of truth and overrides every key it defines.
 DEFAULT_TARGETS = {
-    "kcal":            {"target": 1600, "dir": "under", "label": "Calories",      "short": "kcal",      "unit": "kcal"},
-    "protein_g":       {"target": 130,  "dir": "min",   "label": "Protein",       "short": "protein",   "unit": "g"},
-    "sat_fat_g":       {"target": 15,   "dir": "under", "label": "Sat fat",       "short": "sat fat",   "unit": "g"},
-    "soy_protein_g":   {"target": 22,   "dir": "min",   "label": "Soy protein",   "short": "soy",       "unit": "g"},
-    "omega3_g":        {"target": 3,    "dir": "min",   "label": "Omega-3",       "short": "omega3",    "unit": "g"},
-    "soluble_fiber_g": {"target": 20,   "dir": "min",   "label": "Soluble fiber", "short": "sol fiber", "unit": "g"},
-    "sodium_mg":       {"target": 1500, "dir": "under", "label": "Sodium",        "short": "sodium",    "unit": "mg"},
+    "kcal":      {"target": 2000, "dir": "under", "label": "Calories", "short": "kcal",    "unit": "kcal"},
+    "protein_g": {"target": 100,  "dir": "min",   "label": "Protein",  "short": "protein", "unit": "g"},
+    "sat_fat_g": {"target": 20,   "dir": "under", "label": "Sat fat",  "short": "sat fat", "unit": "g"},
+    "sodium_mg": {"target": 2300, "dir": "under", "label": "Sodium",   "short": "sodium",  "unit": "mg"},
 }
 
 

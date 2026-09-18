@@ -4,8 +4,8 @@ biometrics.csv
 portion-vocabulary.csv
 
 # Personal diet plan documents
-cardiometabolic-diet-plan.md
-evening-meal-plan.md
+*-diet-plan.md
+*-meal-plan.md
 
 # Python cache
 __pycache__/
