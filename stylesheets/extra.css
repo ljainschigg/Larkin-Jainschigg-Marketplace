@@ -29,6 +29,41 @@
   background-color: #000;
 }
 
+/* Show the tab bar's scrollbar.
+ *
+ * The tab list is already horizontally scrollable, but Material hides the
+ * scrollbar (scrollbar-width: none, plus a ::-webkit-scrollbar display:none).
+ * With thirteen categories the last few sit past the right edge with nothing
+ * to indicate they exist. Re-exposing a thin scrollbar makes the overflow
+ * discoverable instead of invisible.
+ *
+ * REVERT: delete this block to restore Material's hidden scrollbar.
+ */
+.md-tabs__list {
+  scrollbar-width: thin;                                   /* Firefox */
+  scrollbar-color: rgba(255, 255, 255, 0.45) transparent;
+  padding-bottom: 2px;
+}
+
+.md-tabs__list::-webkit-scrollbar {
+  display: block;
+  height: 3px;
+}
+
+.md-tabs__list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+.md-tabs__list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 3px;
+}
+
+.md-tabs__list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 .md-version__list {
   overflow: auto;
 }
