@@ -1,17 +1,52 @@
 
-/* Black header/primary and black accent - the light-mode brand. Material
-   defines its light values on :root, so these belong here too. */
+/* ==========================================================================
+   Black / white / sapphire
+   --------------------------------------------------------------------------
+   Black carries structure (header, tabs, footer), white is the page, and one
+   deep teal is the only colour - links, hover, active states.
+
+   The blue is #326ee6 specifically. A single accent that clears WCAG AA on
+   both white and black is close to impossible: passing on white needs a
+   luminance at or below 0.183, passing on black needs 0.175 or above, so the
+   usable band is only 0.175-0.183 wide. This sits inside it and measures
+   4.66:1 on white and 4.51:1 on black - the same colour, legible either way,
+   no per-scheme substitute. (Cherry red, for comparison, is 5.88 on white but
+   3.57 on black, which is why it would need two tints.)
+
+   Hue is adjustable without losing that property: every hue from ~186 to
+   ~232 degrees has a colour in the band. Cooler -> #0079c4 petrol,
+   #0072e4 steel. Warmer -> #486ce2 cobalt, #5669e3 indigo. Past 240 nothing
+   qualifies - true blue and violet cannot reach this luminance saturated.
+
+   Declared on [data-md-color-scheme=...] rather than :root: that is the
+   element Material sets the scheme attribute on. The palette declares
+   primary/accent as "custom" so Material writes no competing variables
+   onto <body>.
+   ========================================================================== */
 :root {
-  --md-primary-fg-color:        #000;
-  --md-accent-fg-color:         #000;
+  --lj-ink:    #000000;   /* header, tabs, footer */
+  --lj-blue:   #326ee6;   /* the one accent - 4.66:1 on white, 4.51:1 on black */
+  --lj-white:  #ffffff;
+  --lj-ash:    #121212;   /* dark page ground */
 }
 
-/* Dark scheme: the :root accent above would otherwise apply here as well,
-   putting #000 on slate's ~14%-lightness background - link hovers, focused
-   nav items and search highlights came out black-on-black. Mirror the
-   monochrome brand instead. Step 4 may replace this with a real accent. */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--lj-ink);
+  --md-primary-bg-color:        var(--lj-white);
+  --md-accent-fg-color:         var(--lj-blue);
+  --md-typeset-a-color:         var(--lj-blue);
+
+  --md-default-bg-color:        var(--lj-white);
+  --md-footer-bg-color:         var(--lj-ink);
+  --md-footer-bg-color--dark:   #000000;
+}
+
 [data-md-color-scheme="slate"] {
-  --md-accent-fg-color:         #fff;
+  --md-primary-fg-color:        var(--lj-ink);
+  --md-accent-fg-color:         var(--lj-blue);
+  --md-typeset-a-color:         var(--lj-blue);
+  --md-default-bg-color:        var(--lj-ash);
+  --md-footer-bg-color:         var(--lj-ink);
 }
 
 :root > * {
@@ -19,15 +54,9 @@
   --md-footer-bg-color:         #000000;
 }
 
-.md-header {
-  background-color: #000;
-}
-
-/* The tabs bar sits directly under the header and must match it. Material
-   colours it from its own primary (indigo) otherwise. */
-.md-tabs {
-  background-color: #000;
-}
+/* Header and tabs both take --md-primary-fg-color now that the palette
+   declares primary as "custom". The hardcoded black that used to live here
+   was only masking body's indigo override. */
 
 /* Show the tab bar's scrollbar.
  *
@@ -94,14 +123,14 @@
 /* Set the background color of the mobile nav header to black */
 @media screen and (max-width: 76.1875em) {
   .md-nav--primary .md-nav__title {
-    background-color: #000 !important;
+    background-color: var(--md-primary-fg-color) !important;
   }
 }
 
 /* Style mobile drawer header - center logo and text */
 @media screen and (max-width: 76.1875em) {
   .md-nav--primary .md-nav__title[for="__drawer"] {
-    background-color: #000 !important;
+    background-color: var(--md-primary-fg-color) !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
