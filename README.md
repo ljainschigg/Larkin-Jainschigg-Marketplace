@@ -75,7 +75,7 @@ A `Makefile` in the repo root handles setup and serving for you. You don't need 
 
 # Documentation Standards
 
-By default, we follow the [Kubernetes documentation style guide](https://kubernetes.io/docs/contribute/style/style-guide/). 
+By default, we follow the [Google developer documentation style guide](https://developers.google.com/style). 
 
 ## Header Capitalization
 

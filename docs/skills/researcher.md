@@ -66,7 +66,7 @@ Research output is saved to `$CLAUDE_PLUGIN_DATA/projects/<project-name>/`.
 
 | | |
 |---|---|
-| **Version** | 1.1.7 |
+| **Version** | 1.1.8 |
 | **Runtime** | Node.js via `npm` |
 | **MCP servers** | `playwright` (npx), `extract-pdf` (bundled Node.js server) |
 | **Maintained by** | Claude Plugins Marketplace |

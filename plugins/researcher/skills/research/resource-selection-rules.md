@@ -55,7 +55,7 @@ Source criteria vary by research mode. Apply the rules for the active mode when 
 **Goal:** Authentic practitioner and community opinion. Authority is irrelevant — lived experience and candid views are the signal.
 
 **Include:**
-- Reddit (especially subreddits relevant to the topic — r/devops, r/kubernetes, r/MachineLearning, r/sysadmin, etc.)
+- Reddit (especially subreddits relevant to the topic — r/devops, r/programming, r/MachineLearning, r/sysadmin, etc.)
 - Hacker News (news.ycombinator.com) — search for relevant discussions
 - dev.to, Medium (practitioner-authored, not brand-published)
 - Personal engineering blogs and substack newsletters

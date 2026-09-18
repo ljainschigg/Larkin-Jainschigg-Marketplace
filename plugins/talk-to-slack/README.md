@@ -39,7 +39,7 @@ Collaboration report (asks which channel and time range; defaults to the last 7 
 Per-person briefing:
 
 ```
-/briefing Randy Bias
+/briefing <person's display name>
 ```
 
 Both save a timestamped markdown file under `./reports/` in the current working directory and print the path.
@@ -56,7 +56,7 @@ Each skill drives the built-in Slack connector directly (`slack_search_channels`
 
 | | |
 |---|---|
-| **Version** | 1.0.2 |
+| **Version** | 1.0.3 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Dependency** | Claude Code built-in Slack connector (authenticated) |

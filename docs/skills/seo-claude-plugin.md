@@ -69,7 +69,7 @@ Your brand facts, product knowledge, competitor lists, and reference documentati
 
 | | |
 |---|---|
-| **Version** | 1.2.1 |
+| **Version** | 1.2.2 |
 | **Type** | skill |
 | **Depends on** | `researcher` |
 | **Project data** | the current working directory |

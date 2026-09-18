@@ -21,7 +21,7 @@ A conversational to-do list manager for Claude Code. Paste freeform text from an
 Claude opens in two modes:
 
 - **Intake** — paste any freeform text. Claude extracts title, requestor, due date, links, tags, priority (1–5), and political weight (1–5), confirms with you, then writes the task.
-- **Query** — ask anything: *"What should I do next?"*, *"What can I get done this morning?"*, *"What has Sarah asked me for?"*, *"What's overdue?"*
+- **Query** — ask anything: *"What should I do next?"*, *"What can I get done this morning?"*, *"What has my manager asked me for?"*, *"What's overdue?"*
 
 ## How it works
 
@@ -35,7 +35,7 @@ Priority and political weight together drive a composite urgency score that dete
 
 | Field | Value |
 |-------|-------|
-| Version | 1.0.0 |
+| Version | 1.0.5 |
 | Tier | platform |
 | Maintained by | Claude Plugins Marketplace |
 | Data | `~/.local/share/smart-todo/tasks.csv` |

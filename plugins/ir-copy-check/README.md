@@ -82,7 +82,7 @@ To refresh: download the newer filing into `./resources/`, re-run the extractor,
 
 | | |
 |---|---|
-| **Version** | 1.0.0 |
+| **Version** | 1.0.1 |
 | **Type** | skill |
 | **Skills** | `setup`, `critique-messaging`, `critique-vs-10k` |
 | **Data** | you supply it, in your working directory (kept out of git) |

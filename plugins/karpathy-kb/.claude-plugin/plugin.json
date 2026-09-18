@@ -1,6 +1,6 @@
 {
   "name": "karpathy-kb",
   "description": "Sets up and maintains a citation-tracked local knowledge base using the Karpathy-loop workflow. Compile raw sources (transcripts, Slack, decks, docs) into a structured wiki where every claim carries full provenance. Query it, lint it, review conflicts, elicit tacit knowledge, and keep it current.",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "type": "skill"
 }

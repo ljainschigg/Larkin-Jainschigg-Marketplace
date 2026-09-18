@@ -220,7 +220,7 @@ If the stimulus is developer tooling specifically, replace the End-User Champion
 
 ```
 **[First name], [title], [company size / industry vertical]**
-Stack & environment: [what they're currently running — key tools, cloud provider, languages]
+Stack & environment: [what they're currently running — key tools, platforms, languages]
 Current pain: [the specific problem this evaluation is meant to solve, from their perspective]
 What they're measured on: [their internal KPIs — uptime, security incidents, delivery velocity, cost reduction]
 Prior relevant experience: [tools they've evaluated or adopted before in this category; scars they carry]

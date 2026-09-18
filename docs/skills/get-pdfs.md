@@ -81,7 +81,7 @@ Stored at `$CLAUDE_PLUGIN_DATA/.env` after `/setup`, covering the common lead-ge
 
 | | |
 |---|---|
-| **Version** | 1.0.5 |
+| **Version** | 1.0.6 |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Runtime** | Node.js via `npx` (Playwright) |
 | **MCP servers** | Playwright (configured automatically via `.mcp.json`) |

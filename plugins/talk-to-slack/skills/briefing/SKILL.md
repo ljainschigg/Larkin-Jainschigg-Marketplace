@@ -49,7 +49,7 @@ The goal is signal, not completeness — use judgment about what's worth fetchin
 
 From all collected messages and threads, identify:
 
-**Topics** — cluster messages by subject matter. Name each cluster concisely (e.g. "Kubernetes operator rewrite", "ACME partnership integration"). A message may belong to more than one cluster.
+**Topics** — cluster messages by subject matter. Name each cluster concisely (e.g. "billing system rewrite", "ACME partnership integration"). A message may belong to more than one cluster.
 
 **People in orbit** — every person the target @-mentioned, directed messages to, or engaged with in thread exchange. Note frequency.
 

@@ -10,9 +10,9 @@ ACTION: Read the article from beginning to end. For each asserted fact, and part
 
   ACTION: Attribute the fact in the article and link to its source:
   - **First appearance of a source**: link with a full attribution sentence naming the publisher and document, e.g.:
-    `[Gartner's 2025 State of Kubernetes Report](https://...) found that 85% of organizations...`
+    `[Example Analyst Group's 2025 State of Workflow Automation Report](https://...) found that 85% of organizations...`
   - **Subsequent appearances of the same source**: reference without re-linking, e.g.:
-    `As Gartner notes, 99% of respondents...`
+    `As Example Analyst Group notes, 99% of respondents...`
   - **Unsupported claims**: insert an inline comment and do not fabricate a source:
     `<!-- UNSUPPORTED ASSERTION: "[exact claim text]" — verify and source before publishing -->`
 

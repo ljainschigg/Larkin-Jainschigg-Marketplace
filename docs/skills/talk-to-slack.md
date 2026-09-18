@@ -36,7 +36,7 @@ Then install the plugin:
 /report                 # asks which channel + time range (default: last 7 days)
 /report last 30 days
 /report all time
-/briefing Randy Bias
+/briefing <person's display name>
 ```
 
 Both save a timestamped markdown file under `./reports/` in the current working directory and print the path.
@@ -47,7 +47,7 @@ Both save a timestamped markdown file under `./reports/` in the current working 
 
 | | |
 |---|---|
-| **Version** | 1.0.2 |
+| **Version** | 1.0.3 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Dependency** | Claude Code built-in Slack connector (authenticated) |

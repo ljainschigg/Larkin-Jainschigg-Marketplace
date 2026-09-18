@@ -81,6 +81,6 @@ Every invocation is self-contained: the engine reads your instance config and pr
 
 | | |
 |---|---|
-| **Version** | 2.1.1 |
+| **Version** | 2.1.3 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |

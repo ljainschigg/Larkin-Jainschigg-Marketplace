@@ -78,6 +78,6 @@ Fields not in your credentials (company size, revenue, referral source, etc.) ar
 
 | | |
 |---|---|
-| **Version** | 1.0.5 |
+| **Version** | 1.0.6 |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Requires** | Playwright MCP (configured automatically via `.mcp.json`) |

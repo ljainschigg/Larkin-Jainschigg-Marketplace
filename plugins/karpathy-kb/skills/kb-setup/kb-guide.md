@@ -48,10 +48,10 @@ Every factual statement in a wiki article must follow this pattern:
 
 Example:
 > The inference layer will support multi-modal inputs by Q2 2025.
-> `[Alice Huang, 2024-11-15_transcript_roadmap-sync, 2024-11-15]`
+> `[First Speaker, 2024-11-15_transcript_roadmap-sync, 2024-11-15]`
 
 For claims stated by multiple people in agreement:
-> `[Alice Huang + Bob Sato, 2024-11-15_transcript_roadmap-sync, 2024-11-15]`
+> `[First Speaker + Second Speaker, 2024-11-15_transcript_roadmap-sync, 2024-11-15]`
 
 **Never strip citations. Never paraphrase away the attribution.**
 

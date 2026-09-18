@@ -72,6 +72,6 @@ The synthesis includes a veto-aware committee signal table (a mean of 4.2 is irr
 
 | | |
 |---|---|
-| **Version** | 1.0.1 |
+| **Version** | 1.0.2 |
 | **Tier** | platform |
 | **Maintained by** | Claude Plugins Marketplace |

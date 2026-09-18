@@ -168,7 +168,7 @@ Map credential values to form fields by label. Use `browser_fill_form` for a bat
 | company size, employees, headcount | Pick `501–1000` or the closest available bracket |
 | annual revenue | Pick `$100M–$500M` or the closest available bracket |
 | how did you hear, referral source | `Web search` or `Industry publication` |
-| biggest challenge, interest, use case | One sentence appropriate for a Director of Content at a cloud-infrastructure company — e.g. "Managing technical documentation at scale across Kubernetes and cloud-native product lines." |
+| biggest challenge, interest, use case | One sentence appropriate for a Director of Content at a mid-sized software company — e.g. "Managing technical documentation at scale across several product lines." |
 | comments, questions, message | Leave blank unless required; if required: "Requesting access to the resource." |
 
 **Country and state fields need care:**
@@ -351,8 +351,8 @@ Return a markdown table when all processing is complete:
 
 | # | URL | Status | Local path | Notes |
 |---|-----|--------|------------|-------|
-| 1 | https://... | ✓ saved | ./resources/cloud-report-2025.pdf | |
-| 2 | https://... | ✓ saved | ./resources/kubernetes-guide.pdf | |
+| 1 | https://... | ✓ saved | ./resources/market-report-2025.pdf | |
+| 2 | https://... | ✓ saved | ./resources/industry-guide.pdf | |
 | 3 | https://... | email-gate | — | Check inbox |
 | 4 | https://... | hard-case | — | CAPTCHA — screenshot at ./resources/captcha-4.png |
 

@@ -32,7 +32,7 @@ env:
   ISSUE_TITLE: "📋 Docs strict-build is failing on main"
   # Who gets assigned when a tracking issue is opened. Default: whoever pushed the
   # breaking commit. To route to fixed maintainers instead, replace with a
-  # comma-separated list of GitHub usernames, e.g. "alice,bob".
+  # comma-separated list of GitHub usernames, e.g. "maintainer-one,maintainer-two".
   ASSIGNEES: ${{ github.actor }}
 
 jobs:
