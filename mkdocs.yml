@@ -32,23 +32,13 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/nav-decor.css
   - stylesheets/external-link.css
 
 plugins:
   - search
-  - ezglossary:
-      section_config:
-        - name: demo
-          inline_refs: short
-  - macros:
-      j2_variable_start_string: "{{{"
-      j2_variable_end_string: "}}}"
   - exclude:
       glob:
         - "*.etag"
-  - redirects:
-      redirect_maps:
 
 nav:
   - Home: index.md
