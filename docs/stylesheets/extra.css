@@ -23,6 +23,12 @@
   background-color: #000;
 }
 
+/* The tabs bar sits directly under the header and must match it. Material
+   colours it from its own primary (indigo) otherwise. */
+.md-tabs {
+  background-color: #000;
+}
+
 .md-version__list {
   overflow: auto;
 }

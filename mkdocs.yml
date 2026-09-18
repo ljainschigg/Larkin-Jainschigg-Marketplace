@@ -28,8 +28,14 @@ theme:
   features:
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.tooltips
     - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.footer
     - toc.follow
     - content.action.view
     - navigation.indexes

@@ -1,8 +1,16 @@
-/* Add a small arrow to indicate external links */
-.md-nav__link[href^="http"]::after {
-  content: "↗";           /* Unicode external link arrow */
-  font-size: 0.75em;      /* slightly smaller than text */
-  margin-left: 0.1rem;   /* space between text and arrow */
-  vertical-align: text-bottom; /* aligns with baseline of text */
-  opacity: 0.7;           /* subtle appearance */
+/* Mark genuinely external links in page content with a small arrow.
+
+   This previously targeted .md-nav__link[href^="http"]. That was inert while
+   links were relative, but `navigation.instant` makes Material emit absolute
+   URLs for internal links too - it matched 49 of 63 nav links and put an
+   "external" arrow on the site's own table of contents. There is no CSS-only
+   way to tell internal from external once every href starts with http, so we
+   exclude our own origins explicitly and scope it to content, where external
+   links actually appear. */
+.md-typeset a[href^="http"]:not([href*="ljainschigg.github.io"]):not([href^="http://localhost"]):not([href^="http://127.0.0.1"])::after {
+  content: "\2197";             /* ↗ */
+  font-size: 0.75em;
+  margin-left: 0.1rem;
+  vertical-align: text-bottom;
+  opacity: 0.7;
 }
