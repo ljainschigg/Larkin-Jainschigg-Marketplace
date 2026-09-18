@@ -13,14 +13,18 @@ theme:
   logo: assets/logo.svg
 
   palette:
-    - scheme: default
+    # Follows the visitor's OS setting on first visit; the toggle then
+    # remembers their explicit choice.
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode
-    - scheme: slate
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        name: Switch to light mode
   features:
     - search.suggest
     - search.highlight

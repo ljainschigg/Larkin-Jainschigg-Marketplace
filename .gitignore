@@ -10,6 +10,9 @@ mkdocs-env/
 # Ignore MkDocs build output
 site/
 
+# Playwright MCP local state — created at runtime when previewing the site
+.playwright-mcp/
+
 # Ignore Python bytecode and cache
 __pycache__/
 *.pyc

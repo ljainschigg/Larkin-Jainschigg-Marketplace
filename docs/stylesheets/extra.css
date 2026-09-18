@@ -1,7 +1,17 @@
 
+/* Black header/primary and black accent - the light-mode brand. Material
+   defines its light values on :root, so these belong here too. */
 :root {
   --md-primary-fg-color:        #000;
   --md-accent-fg-color:         #000;
+}
+
+/* Dark scheme: the :root accent above would otherwise apply here as well,
+   putting #000 on slate's ~14%-lightness background - link hovers, focused
+   nav items and search highlights came out black-on-black. Mirror the
+   monochrome brand instead. Step 4 may replace this with a real accent. */
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color:         #fff;
 }
 
 :root > * {
