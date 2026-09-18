@@ -273,3 +273,21 @@
     padding: .6rem .8rem;
   }
 }
+
+/* Card grids: three across on desktop.
+ *
+ * Material sizes card columns with minmax(16rem, 1fr). Its root font-size is
+ * 20px, so 16rem is a 320px minimum - in the ~940px content column only two
+ * fit, leaving a ragged third card on its own row. 14rem (280px) fits three
+ * and still collapses to two, then one, as the viewport narrows.
+ *
+ * auto-fill rather than auto-fit: auto-fit collapses the empty tracks and
+ * stretches whatever is left to fill the row, so a two-card section rendered
+ * much wider cards than a three-card one, and a lone fourth card spanned the
+ * full width. auto-fill keeps the tracks, so every card is the same width
+ * whatever the section holds.
+ */
+.md-typeset .grid.cards > ul,
+.md-typeset .grid.cards {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+}
