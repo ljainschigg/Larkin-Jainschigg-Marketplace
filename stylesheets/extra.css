@@ -26,6 +26,7 @@
 :root {
   --lj-ink:    #000000;   /* header, tabs, footer */
   --lj-blue:   #326ee6;   /* the one accent - 4.66:1 on white, 4.51:1 on black */
+  --lj-blue-rgb: 50, 110, 230;   /* same colour, for rgba() washes */
   --lj-white:  #ffffff;
   --lj-ash:    #121212;   /* dark page ground */
 }
@@ -39,6 +40,15 @@
   --md-default-bg-color:        var(--lj-white);
   --md-footer-bg-color:         var(--lj-ink);
   --md-footer-bg-color--dark:   #000000;
+
+  /* Highlights. Material ships a 50%-opacity yellow for ==marks== and an
+     unrelated blue for highlighted code lines; both clash with a one-accent
+     palette. Everything that highlights is now a wash of the accent, kept
+     light enough that text on top stays at full contrast. */
+  --md-typeset-mark-color:      rgba(var(--lj-blue-rgb), 0.28);
+  --md-code-hl-color:           var(--lj-blue);
+  --md-code-hl-color--light:    rgba(var(--lj-blue-rgb), 0.16);
+  --md-code-bg-color:           rgba(var(--lj-blue-rgb), 0.10);
 }
 
 [data-md-color-scheme="slate"] {
@@ -47,6 +57,63 @@
   --md-typeset-a-color:         var(--lj-blue);
   --md-default-bg-color:        var(--lj-ash);
   --md-footer-bg-color:         var(--lj-ink);
+
+  /* Same washes, stronger alpha: a 6% tint disappears against #121212. */
+  --md-typeset-mark-color:      rgba(var(--lj-blue-rgb), 0.42);
+  --md-code-hl-color:           var(--lj-blue);
+  --md-code-hl-color--light:    rgba(var(--lj-blue-rgb), 0.26);
+  --md-code-bg-color:           rgba(var(--lj-blue-rgb), 0.22);
+}
+
+/* Admonitions.
+ *
+ * Material hardcodes #00bfa5 (teal-green) for "tip", independent of the
+ * palette - the one on the home page read as a second brand colour. Retint
+ * the informational callouts to the accent.
+ *
+ * Deliberately NOT retinted: warning, danger, failure, bug and caution. Their
+ * colours carry meaning rather than brand, and flattening them to the accent
+ * would remove the signal. (Only "tip" is used in the docs today; the rest
+ * are here so a future callout does not reintroduce a stray colour.)
+ */
+.md-typeset .admonition.tip,      .md-typeset details.tip,
+.md-typeset .admonition.note,     .md-typeset details.note,
+.md-typeset .admonition.info,     .md-typeset details.info,
+.md-typeset .admonition.abstract, .md-typeset details.abstract {
+  border-color: var(--lj-blue);
+}
+
+.md-typeset .tip > .admonition-title,      .md-typeset .tip > summary,
+.md-typeset .note > .admonition-title,     .md-typeset .note > summary,
+.md-typeset .info > .admonition-title,     .md-typeset .info > summary,
+.md-typeset .abstract > .admonition-title, .md-typeset .abstract > summary {
+  background-color: rgba(var(--lj-blue-rgb), 0.16);
+}
+
+.md-typeset .tip > .admonition-title::before,      .md-typeset .tip > summary::before,
+.md-typeset .note > .admonition-title::before,     .md-typeset .note > summary::before,
+.md-typeset .info > .admonition-title::before,     .md-typeset .info > summary::before,
+.md-typeset .abstract > .admonition-title::before, .md-typeset .abstract > summary::before {
+  background-color: var(--lj-blue);
+}
+
+.md-typeset .tip > .admonition-title::after,      .md-typeset .tip > summary::after,
+.md-typeset .note > .admonition-title::after,     .md-typeset .note > summary::after,
+.md-typeset .info > .admonition-title::after,     .md-typeset .info > summary::after,
+.md-typeset .abstract > .admonition-title::after, .md-typeset .abstract > summary::after {
+  color: var(--lj-blue);
+}
+
+.md-typeset .admonition.tip:focus-within,      .md-typeset details.tip:focus-within,
+.md-typeset .admonition.note:focus-within,     .md-typeset details.note:focus-within,
+.md-typeset .admonition.info:focus-within,     .md-typeset details.info:focus-within,
+.md-typeset .admonition.abstract:focus-within, .md-typeset details.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem rgba(var(--lj-blue-rgb), 0.10);
+}
+
+/* Text selection, so highlighting with the cursor matches everything else. */
+::selection {
+  background: rgba(var(--lj-blue-rgb), 0.32);
 }
 
 :root > * {
@@ -70,7 +137,7 @@
  */
 .md-tabs__list {
   scrollbar-width: thin;                                   /* Firefox */
-  scrollbar-color: rgba(255, 255, 255, 0.45) transparent;
+  scrollbar-color: var(--md-accent-fg-color) rgba(255, 255, 255, 0.12);
   padding-bottom: 2px;
 }
 
@@ -85,12 +152,13 @@
 }
 
 .md-tabs__list::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.45);
+  background: var(--md-accent-fg-color);
   border-radius: 3px;
 }
 
 .md-tabs__list::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--md-accent-fg-color);
+  filter: brightness(1.25);
 }
 
 .md-version__list {
