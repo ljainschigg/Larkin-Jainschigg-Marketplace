@@ -21,7 +21,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install example-mcp-node-skill@lj-marketplace
+/plugin install example-mcp-node-skill@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -46,7 +46,7 @@ A wrapper script (`run-server.sh`) handles dependency installation on first run,
 
 | | |
 |---|---|
-| **Version** | 1.1.5 |
+| **Version** | 1.1.6 |
 | **Runtime** | Node.js via `npm` |
 | **External dependency** | `figlet` |
 | **Maintained by** | Claude Plugins Marketplace |

@@ -7,7 +7,7 @@ Curator tool that walks every plugin in a marketplace repository and reports for
 ## Install
 
 ```
-/plugin install validate-marketplace@lj-marketplace
+/plugin install validate-marketplace@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -46,5 +46,5 @@ Intended for curators, not end users. Does not modify any files.
 
 | | |
 |---|---|
-| **Version** | 1.2.5 |
+| **Version** | 1.2.6 |
 | **Maintained by** | Claude Plugins Marketplace |

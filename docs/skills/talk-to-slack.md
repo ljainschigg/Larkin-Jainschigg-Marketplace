@@ -25,7 +25,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install talk-to-slack@lj-marketplace
+/plugin install talk-to-slack@Larkin-Jainschigg-Marketplace
 ```
 
 ---
@@ -47,7 +47,7 @@ Both save a timestamped markdown file under `./reports/` in the current working 
 
 | | |
 |---|---|
-| **Version** | 1.0.5 |
+| **Version** | 1.0.6 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Dependency** | Claude Code built-in Slack connector (authenticated) |

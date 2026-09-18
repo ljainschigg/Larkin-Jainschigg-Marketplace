@@ -52,4 +52,4 @@ git push origin main
 
 echo
 echo "Done. Consumers will pick up the new index with:"
-echo "  /plugin marketplace update lj-marketplace"
+echo "  /plugin marketplace update Larkin-Jainschigg-Marketplace"

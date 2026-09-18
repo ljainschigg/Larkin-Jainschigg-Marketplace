@@ -17,7 +17,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install discourse-tracker@lj-marketplace
+/plugin install discourse-tracker@Larkin-Jainschigg-Marketplace
 ```
 
 ---
@@ -33,7 +33,7 @@ That's it. The skill scans the source list, extracts signal, prepends a dated se
 To customize what gets scanned, edit `sources.md` in the skill directory:
 
 ```
-~/.claude/plugins/discourse-tracker-lj-marketplace/skills/update-discourse/sources.md
+~/.claude/plugins/discourse-tracker-Larkin-Jainschigg-Marketplace/skills/update-discourse/sources.md
 ```
 
 Add or remove sources, adjust what to look for in each category, or add new categories entirely.
@@ -72,6 +72,6 @@ For each category in `sources.md`, the skill fetches 1â€“2 sources, extracts 3â€
 
 | | |
 |---|---|
-| **Version** | 1.0.4 |
+| **Version** | 1.0.5 |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Shared context** | `~/.claude/shared-context/current-discourse.md` |

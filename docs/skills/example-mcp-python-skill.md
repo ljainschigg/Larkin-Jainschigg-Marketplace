@@ -21,7 +21,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install example-mcp-python-skill@lj-marketplace
+/plugin install example-mcp-python-skill@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -46,7 +46,7 @@ Dependencies (`mcp`, `cowsay`) are declared inline in the script using [PEP 723]
 
 | | |
 |---|---|
-| **Version** | 1.1.5 |
+| **Version** | 1.1.6 |
 | **Runtime** | Python via `uv` |
 | **External dependency** | `cowsay` |
 | **Maintained by** | Claude Plugins Marketplace |

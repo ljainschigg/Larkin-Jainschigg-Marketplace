@@ -1,6 +1,6 @@
 {
   "name": "submit-plugin",
   "description": "Full PR submission workflow for the Claude Plugins Marketplace: runs security check, clones repo, creates branch, and files a pull request with the full review report.",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "type": "skill"
 }

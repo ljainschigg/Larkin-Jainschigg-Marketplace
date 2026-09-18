@@ -15,7 +15,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install markdown-doc-cleaner@lj-marketplace
+/plugin install markdown-doc-cleaner@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -32,5 +32,5 @@ Paste or type your rough notes when prompted. Claude will reformat them into a c
 
 | | |
 |---|---|
-| **Version** | 1.0.4 |
+| **Version** | 1.0.5 |
 | **Maintained by** | Claude Plugins Marketplace |

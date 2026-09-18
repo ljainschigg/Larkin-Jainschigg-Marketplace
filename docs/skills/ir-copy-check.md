@@ -24,7 +24,7 @@ Running both gives you overlapping but non-identical coverage.
 
 ```
 /plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
-/plugin install ir-copy-check@lj-marketplace
+/plugin install ir-copy-check@Larkin-Jainschigg-Marketplace
 ```
 
 ## Setup
@@ -82,7 +82,7 @@ To refresh: download the newer filing into `./resources/`, re-run the extractor,
 
 | | |
 |---|---|
-| **Version** | 1.0.3 |
+| **Version** | 1.0.4 |
 | **Type** | skill |
 | **Skills** | `setup`, `critique-messaging`, `critique-vs-10k` |
 | **Data** | you supply it, in your working directory (kept out of git) |

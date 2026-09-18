@@ -22,7 +22,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install get-pdfs@lj-marketplace
+/plugin install get-pdfs@Larkin-Jainschigg-Marketplace
 ```
 
 Run one-time setup:
@@ -81,7 +81,7 @@ Stored at `$CLAUDE_PLUGIN_DATA/.env` after `/setup`, covering the common lead-ge
 
 | | |
 |---|---|
-| **Version** | 1.0.7 |
+| **Version** | 1.0.8 |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Runtime** | Node.js via `npx` (Playwright) |
 | **MCP servers** | Playwright (configured automatically via `.mcp.json`) |

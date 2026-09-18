@@ -16,7 +16,7 @@ The PR is never merged automatically. Merging is a human decision made by market
 ## Install
 
 ```
-/plugin install submit-plugin@lj-marketplace
+/plugin install submit-plugin@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -69,6 +69,6 @@ Every PR filed by `submit-plugin` contains a structured description so reviewers
 
 | | |
 |---|---|
-| **Version** | 1.2.4 |
+| **Version** | 1.2.5 |
 | **Requires** | `plugin-security-check` |
 | **Maintained by** | Claude Plugins Marketplace |

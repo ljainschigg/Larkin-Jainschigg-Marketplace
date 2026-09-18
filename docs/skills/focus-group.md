@@ -28,7 +28,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install focus-group@lj-marketplace
+/plugin install focus-group@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -72,6 +72,6 @@ The synthesis includes a veto-aware committee signal table (a mean of 4.2 is irr
 
 | | |
 |---|---|
-| **Version** | 1.0.4 |
+| **Version** | 1.0.5 |
 | **Tier** | platform |
 | **Maintained by** | Claude Plugins Marketplace |

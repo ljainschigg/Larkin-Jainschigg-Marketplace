@@ -23,7 +23,7 @@ If you haven't added the marketplace yet:
 Then install the plugin and verify the runtime:
 
 ```
-/plugin install karpathy-kb@lj-marketplace
+/plugin install karpathy-kb@Larkin-Jainschigg-Marketplace
 /setup
 ```
 
@@ -80,7 +80,7 @@ Raw sources in `raw/` are never modified. `/kb-compile` extracts claims with ful
 
 | | |
 |---|---|
-| **Version** | 1.3.5 |
+| **Version** | 1.3.6 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Prerequisite** | Python 3.8+ (for `/kb-setup`, `/kb-lint`, `/kb-ingest`; run `/setup` to verify) |

@@ -49,7 +49,7 @@ Generate a complete README with these sections in order:
 - `# <plugin-name>` — H1 heading
 - Description paragraph (what it does and why it's useful)
 - `## Prerequisites` — if the plugin requires any tools, accounts, or permissions; omit this section if there are none
-- `## Install` — with the `/plugin install <plugin-name>@lj-marketplace` command
+- `## Install` — with the `/plugin install <plugin-name>@Larkin-Jainschigg-Marketplace` command
 - `## Use` — with the `/<plugin-name>` invocation and a brief description of what happens
 - `## How it works` — one short paragraph on the implementation approach
 - `## Details` — table with Version, Tier, and Maintained by fields

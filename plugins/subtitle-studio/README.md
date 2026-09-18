@@ -40,7 +40,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install subtitle-studio@lj-marketplace
+/plugin install subtitle-studio@Larkin-Jainschigg-Marketplace
 ```
 
 After installing, run setup to confirm `uv` is present and see what your machine can do:
@@ -124,7 +124,7 @@ chosen Whisper model (cached thereafter).
 
 | | |
 |---|---|
-| **Version** | 0.2.6 |
+| **Version** | 0.2.7 |
 | **Type** | skill (MCP-backed, credential-free, fully local) |
 | **Runtime** | Python via `uv` |
 | **Core dependencies** | `mcp`, `faster-whisper`, `pysubs2` |

@@ -1,6 +1,6 @@
 {
   "name": "example-skill",
   "description": "Placeholder skill to validate the marketplace pipeline.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "skill"
 }

@@ -21,7 +21,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install linkcheck@lj-marketplace
+/plugin install linkcheck@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -47,7 +47,7 @@ A full multi-version scan typically takes 5–15 minutes depending on site size.
 
 | | |
 |---|---|
-| **Version** | 1.0.5 |
+| **Version** | 1.0.6 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Runtime** | Python via `uv` (dependencies declared inline in `linkcheck.py`) |

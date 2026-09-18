@@ -21,7 +21,7 @@ Templates for the first three ship in `templates/`; `/diet setup` copies them.
 
 ```
 /plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
-/plugin install diet@lj-marketplace
+/plugin install diet@Larkin-Jainschigg-Marketplace
 ```
 
 ## Use
@@ -81,6 +81,6 @@ Every invocation is self-contained: the engine reads your instance config and pr
 
 | | |
 |---|---|
-| **Version** | 2.1.6 |
+| **Version** | 2.1.7 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |

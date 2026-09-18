@@ -11,7 +11,7 @@ import os
 import sys
 
 REPO = "https://github.com/ljainschigg/Larkin-Jainschigg-Marketplace.git"
-MARKETPLACE_NAME = "lj-marketplace"
+MARKETPLACE_NAME = "Larkin-Jainschigg-Marketplace"
 PLUGINS_DIR = "plugins"
 # Canonical index, committed to main. Consumed by
 # `/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace`

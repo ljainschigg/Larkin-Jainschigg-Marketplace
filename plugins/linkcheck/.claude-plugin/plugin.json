@@ -1,6 +1,6 @@
 {
   "name": "linkcheck",
   "description": "Scan a versioned MkDocs documentation site for broken links and save a full report.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "skill"
 }

@@ -32,7 +32,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install subtitle-studio@lj-marketplace
+/plugin install subtitle-studio@Larkin-Jainschigg-Marketplace
 ```
 
 There is no separate setup step — `uv` installs the server's dependencies on first use, and the first transcription downloads the chosen Whisper model (cached thereafter).
@@ -89,7 +89,7 @@ Dependencies (`mcp`, `faster-whisper`, `pysubs2`) are declared inline in the ser
 
 | | |
 |---|---|
-| **Version** | 0.2.6 |
+| **Version** | 0.2.7 |
 | **Type** | skill (MCP-backed, credential-free, fully local) |
 | **Runtime** | Python via `uv` |
 | **Core dependencies** | `mcp`, `faster-whisper`, `pysubs2` |

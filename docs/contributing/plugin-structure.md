@@ -63,9 +63,9 @@ This is the correct pattern for plugins that need structured data manipulation, 
 
 ## The `${CLAUDE_PLUGIN_ROOT}` variable
 
-`${CLAUDE_PLUGIN_ROOT}` expands to the plugin's installation path at runtime (e.g. `~/.claude/plugins/cache/lj-marketplace/<plugin-name>/1.0.0`). Use it whenever a `SKILL.md` or `.mcp.json` needs to reference a file bundled with the plugin.
+`${CLAUDE_PLUGIN_ROOT}` expands to the plugin's installation path at runtime (e.g. `~/.claude/plugins/cache/Larkin-Jainschigg-Marketplace/<plugin-name>/1.0.0`). Use it whenever a `SKILL.md` or `.mcp.json` needs to reference a file bundled with the plugin.
 
-Similarly, `${CLAUDE_PLUGIN_DATA}` expands to a writable per-plugin data directory (`~/.claude/plugins/data/<plugin-name>-lj-marketplace`). Use it for state that should persist across sessions — task lists, caches, user preferences.
+Similarly, `${CLAUDE_PLUGIN_DATA}` expands to a writable per-plugin data directory (`~/.claude/plugins/data/<plugin-name>-Larkin-Jainschigg-Marketplace`). Use it for state that should persist across sessions — task lists, caches, user preferences.
 
 ---
 
