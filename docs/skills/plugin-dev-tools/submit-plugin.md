@@ -9,7 +9,7 @@ The PR is never merged automatically. Merging is a human decision made by market
 ## Install
 
 ```
-/plugin install submit-plugin@claude-plugins
+/plugin install submit-plugin@lj-marketplace
 ```
 
 ## Use
@@ -62,6 +62,6 @@ Every PR filed by `submit-plugin` contains a structured description so reviewers
 
 | | |
 |---|---|
-| **Version** | 1.2.3 |
+| **Version** | 1.2.4 |
 | **Requires** | `plugin-security-check` |
 | **Maintained by** | Claude Plugins Marketplace |

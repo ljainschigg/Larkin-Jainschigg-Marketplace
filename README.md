@@ -364,7 +364,7 @@ Dev Tools, verification, and what happens after you submit) lives in the docs:
    This regenerates `.claude-plugin/marketplace.json` from `plugins/`, commits it with
    your changes, and pushes to `main` (a live production deploy).
 
-Either way, users then run `/plugin marketplace update claude-plugins` to pick up the plugin.
+Either way, users then run `/plugin marketplace update lj-marketplace` to pick up the plugin.
 
 `.claude-plugin/marketplace.json` is the committed index the `github` marketplace source
 reads; it is generated entirely from `plugins/` — never hand-edit it. If you ever push

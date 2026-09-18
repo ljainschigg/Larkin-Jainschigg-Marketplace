@@ -7,7 +7,7 @@ Fast check that a plugin's `README.md` meets the documentation standards require
 ## Install
 
 ```
-/plugin install plugin-docs-lint@claude-plugins
+/plugin install plugin-docs-lint@lj-marketplace
 ```
 
 ## Use
@@ -53,5 +53,5 @@ A list of findings with suggested fixes. Unlike [`plugin-security-check`](plugin
 
 | | |
 |---|---|
-| **Version** | 1.1.2 |
+| **Version** | 1.1.3 |
 | **Maintained by** | Claude Plugins Marketplace |

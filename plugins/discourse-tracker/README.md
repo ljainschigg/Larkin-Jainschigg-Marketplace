@@ -7,7 +7,7 @@ Any other skill can read from `~/.claude/shared-context/current-discourse.md` to
 ## Install
 
 ```
-/plugin install discourse-tracker@claude-plugins
+/plugin install discourse-tracker@lj-marketplace
 ```
 
 ## Use
@@ -21,7 +21,7 @@ That's it. The skill scans the source list, extracts signal, prepends a dated se
 To customize what gets scanned, edit `sources.md` in the skill directory:
 
 ```
-~/.claude/plugins/discourse-tracker-claude-plugins/skills/update-discourse/sources.md
+~/.claude/plugins/discourse-tracker-lj-marketplace/skills/update-discourse/sources.md
 ```
 
 Add or remove sources, adjust what to look for in each category, or add new categories entirely.
@@ -52,5 +52,5 @@ For each category in `sources.md`, the skill fetches 1â€“2 sources, extracts 3â€
 
 | | |
 |---|---|
-| **Version** | 1.0.3 |
+| **Version** | 1.0.4 |
 | **Maintained by** | Claude Plugins Marketplace |

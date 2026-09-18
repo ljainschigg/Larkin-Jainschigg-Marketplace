@@ -7,7 +7,7 @@ Deep inspection of a plugin folder that evaluates format compliance, security ri
 ## Install
 
 ```
-/plugin install plugin-security-check@claude-plugins
+/plugin install plugin-security-check@lj-marketplace
 ```
 
 ## Use
@@ -90,5 +90,5 @@ The report closes with an overall verdict: **PASS**, **PASS WITH WARNINGS**, or 
 
 | | |
 |---|---|
-| **Version** | 1.2.5 |
+| **Version** | 1.2.6 |
 | **Maintained by** | Claude Plugins Marketplace |

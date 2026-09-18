@@ -15,7 +15,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install example-skill@claude-plugins
+/plugin install example-skill@lj-marketplace
 ```
 
 ## Use
@@ -32,5 +32,5 @@ Claude will confirm that the marketplace pipeline is working correctly.
 
 | | |
 |---|---|
-| **Version** | 1.0.4 |
+| **Version** | 1.0.5 |
 | **Maintained by** | Claude Plugins Marketplace |

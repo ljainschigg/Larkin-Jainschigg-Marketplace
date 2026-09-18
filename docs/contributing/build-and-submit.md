@@ -14,10 +14,10 @@ The recommended tooling — [Plugin Dev Tools](../skills/plugin-dev-tools/index.
 - **Claude Code** installed, with the marketplace added and authenticated. This is a **private** marketplace, so you need **read access to the repo** and git configured to authenticate — see [the authentication section on the home page](../index.md#do-you-need-to-authenticate). To *submit*, you also need permission to push a branch (collaborator access, or a fork).
 - **The Plugin Dev Tools installed:**
   ```
-  /plugin install plugin-scaffold@claude-plugins
-  /plugin install plugin-docs-lint@claude-plugins
-  /plugin install plugin-security-check@claude-plugins
-  /plugin install submit-plugin@claude-plugins
+  /plugin install plugin-scaffold@lj-marketplace
+  /plugin install plugin-docs-lint@lj-marketplace
+  /plugin install plugin-security-check@lj-marketplace
+  /plugin install submit-plugin@lj-marketplace
   ```
 - **Decide your plugin's `type`:** `skill` (behavior only), `tool` (reaches an external service, needs credentials), or `app` (a person's instance composing skills/tools). This goes in the manifest and is checked at submit time.
 
@@ -71,7 +71,7 @@ This runs the security check, clones the repo, creates a branch, and files a **p
 - **CI runs automatically** on the PR: `publish-check` (manifest conventions, no committed secrets, and that `.claude-plugin/marketplace.json` is regenerated and in sync) and the strict docs build. Fix anything they flag and push again.
 - **A curator reviews** the PR and the attached security report.
 - **On merge to `main`**, the marketplace index regenerates and the docs site redeploys.
-- **Users pick it up** with `/plugin marketplace update claude-plugins`, then `/plugin install <your-plugin>@claude-plugins`.
+- **Users pick it up** with `/plugin marketplace update lj-marketplace`, then `/plugin install <your-plugin>@lj-marketplace`.
 
 Updating an existing plugin later? Any content change requires a **semver version bump** (bump-on-change) — CI fails a changed plugin that wasn't bumped. [`/plugin-diff`](../skills/plugin-dev-tools/plugin-diff.md) summarizes what changed between two versions.
 

@@ -1,6 +1,6 @@
 {
   "name": "secret-resolver",
   "description": "Provider-agnostic per-user secret broker for platform tools: get/set OAuth secrets, tokens, and API keys via the OS keyring, pass, or a locked-file fallback, keyed by <domain>/<service>/<field>.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "tool"
 }

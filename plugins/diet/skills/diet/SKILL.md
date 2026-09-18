@@ -87,7 +87,7 @@ Only set this up if the user wants device sync. If they do, negotiate the creden
    - **`secret-resolver`** (recommended — provider-agnostic keyring/pass/file), or
    - **their own solution** — any tool that can export the `<SERVICE>_<FIELD>` env vars (e.g. `FITBIT_CLIENT_ID`, `WITHINGS_CLIENT_SECRET`) into the environment diet's server runs in.
 
-   If they want `secret-resolver` but it isn't installed: "Install it (`/plugin install secret-resolver@claude-plugins`), run `secret-resolver setup`, then come back." Manual logging keeps working meanwhile.
+   If they want `secret-resolver` but it isn't installed: "Install it (`/plugin install secret-resolver@lj-marketplace`), run `secret-resolver setup`, then come back." Manual logging keeps working meanwhile.
 
 3. **Get the required credentials into the chosen solution** (the `requires_credentials` keys, per service they want):
    - **secret-resolver:** run `secret-resolver install` once (drops the discovery pointer), then the user stores each OAuth client id/secret **themselves, value via stdin** so it never reaches the model or argv:

@@ -1,7 +1,7 @@
 {
   "name": "diet",
   "description": "Track food intake and biometrics against per-user health targets, with loose logging, a self-correcting portion vocabulary, and optional device sync. Person-neutral engine; all personalization lives in the instance's config files.",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "type": "skill",
   "mcpServers": "./.mcp.json",
   "requires_credentials": [

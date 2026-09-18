@@ -9,7 +9,7 @@ Also used internally by the `researcher` plugin for PDF retrieval.
 ## Install
 
 ```
-/plugin install get-pdfs@claude-plugins
+/plugin install get-pdfs@lj-marketplace
 ```
 
 ## Setup
@@ -78,6 +78,6 @@ Fields not in your credentials (company size, revenue, referral source, etc.) ar
 
 | | |
 |---|---|
-| **Version** | 1.0.6 |
+| **Version** | 1.0.7 |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Requires** | Playwright MCP (configured automatically via `.mcp.json`) |

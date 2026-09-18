@@ -21,7 +21,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install example-mcp-node-skill@claude-plugins
+/plugin install example-mcp-node-skill@lj-marketplace
 ```
 
 After installing, run setup to confirm Node.js/npm are present and the server responds:
@@ -52,7 +52,7 @@ A wrapper script (`run-server.sh`) handles dependency installation on first run,
 
 | | |
 |---|---|
-| **Version** | 1.1.4 |
+| **Version** | 1.1.5 |
 | **Runtime** | Node.js via `npm` |
 | **External dependency** | `figlet` |
 | **Maintained by** | Claude Plugins Marketplace |

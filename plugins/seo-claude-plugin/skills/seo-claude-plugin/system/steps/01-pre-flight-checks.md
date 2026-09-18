@@ -5,7 +5,7 @@
 ACTION: This workflow invokes the `researcher` plugin and may clone documentation repositories the user asks for. Before anything else, verify the runtime prerequisites and stop with clear guidance if any is missing:
 
 - Run `git --version`. If `git` is not found, stop and tell the user to install Git (https://git-scm.com) before continuing — the optional repo-cloning step below depends on it.
-- Confirm the `researcher` plugin is installed (this workflow calls `/research`). If it is not available, tell the user to install it with `/plugin install researcher@claude-plugins` and run its `/setup`.
+- Confirm the `researcher` plugin is installed (this workflow calls `/research`). If it is not available, tell the user to install it with `/plugin install researcher@lj-marketplace` and run its `/setup`.
 
 Do not proceed past a missing prerequisite.
 
@@ -48,6 +48,6 @@ IF neither is true:
 
 ## Credentials note
 
-NOTE: Credentials used for filling gated PDF forms during research are stored by the researcher plugin at `${CLAUDE_PLUGIN_DATA}/config/` or `~/.claude/plugins/data/researcher-claude-plugins/.env`. The researcher plugin manages these — run `/setup` within the researcher plugin if credentials have not been configured.
+NOTE: Credentials used for filling gated PDF forms during research are stored by the researcher plugin at `${CLAUDE_PLUGIN_DATA}/config/` or `~/.claude/plugins/data/researcher-lj-marketplace/.env`. The researcher plugin manages these — run `/setup` within the researcher plugin if credentials have not been configured.
 
 ACTION: Inform the user that pre-flight checks are complete and STOP. Please await further instructions.

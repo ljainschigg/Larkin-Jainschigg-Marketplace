@@ -10,7 +10,7 @@ The platform's shared, per-user secret broker. Tools (Fitbit, Withings, Google, 
 ## Install
 
 ```
-/plugin install secret-resolver@claude-plugins
+/plugin install secret-resolver@lj-marketplace
 ```
 
 ## Use
@@ -32,7 +32,7 @@ A thin, provider-agnostic shim over proven infrastructure — the OS keyring (`p
 
 | | |
 |---|---|
-| **Version** | 0.2.1 |
+| **Version** | 0.2.2 |
 | **Tier** | extended |
 | **Type** | tool |
 | **Maintained by** | Claude Plugins Marketplace |

@@ -263,12 +263,12 @@ You need **Claude Code** installed and running. Then:
 
 ```
 /plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
-/plugin install <plugin-name>@claude-plugins
+/plugin install <plugin-name>@lj-marketplace
 ```
 
 You only need to add the marketplace once. To see what is available, run
 `/plugin list`; to pick up new and updated plugins later, run
-`/plugin marketplace update claude-plugins` and reinstall the ones you want.
+`/plugin marketplace update lj-marketplace` and reinstall the ones you want.
 
 ### Do you need to authenticate?
 
@@ -324,7 +324,7 @@ up authentication depends on whether that repository is **public** or **private*
     Read access is enough for everything on this page — you never need write
     access to install or use plugins. If a background auto-update of the
     marketplace ever fails on a private repo, just run
-    `/plugin marketplace update claude-plugins` manually, or set
+    `/plugin marketplace update lj-marketplace` manually, or set
     `CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1` in your environment.
 
 ---

@@ -9,7 +9,7 @@ A conversational to-do list manager for Claude Code. Paste freeform text from an
 ## Install
 
 ```
-/plugin install smart-todo@claude-plugins
+/plugin install smart-todo@lj-marketplace
 ```
 
 ## Use
@@ -35,7 +35,7 @@ Priority and political weight together drive a composite urgency score that dete
 
 | Field | Value |
 |-------|-------|
-| Version | 1.0.5 |
+| Version | 1.0.6 |
 | Tier | platform |
 | Maintained by | Claude Plugins Marketplace |
 | Data | `~/.local/share/smart-todo/tasks.csv` |

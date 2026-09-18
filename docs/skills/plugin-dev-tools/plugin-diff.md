@@ -7,7 +7,7 @@ Produces a plain-language summary of what changed between two versions of a plug
 ## Install
 
 ```
-/plugin install plugin-diff@claude-plugins
+/plugin install plugin-diff@lj-marketplace
 ```
 
 ## Use
@@ -56,5 +56,5 @@ A structured summary organized by category, written for a non-technical reader w
 
 | | |
 |---|---|
-| **Version** | 1.0.2 |
+| **Version** | 1.0.3 |
 | **Maintained by** | Claude Plugins Marketplace |

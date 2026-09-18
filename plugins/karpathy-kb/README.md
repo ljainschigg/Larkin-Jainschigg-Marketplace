@@ -13,7 +13,7 @@ Works as an Obsidian vault out of the box.
 ## Install
 
 ```
-/plugin install karpathy-kb@claude-plugins
+/plugin install karpathy-kb@lj-marketplace
 ```
 
 Then verify the runtime once:
@@ -83,7 +83,7 @@ Raw source documents live in `raw/` and are never modified. `/kb-compile` reads 
 
 | | |
 |---|---|
-| **Version** | 1.3.4 |
+| **Version** | 1.3.5 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Prerequisite** | Python 3.8+ (for `/kb-setup`, `/kb-lint`, `/kb-ingest`; run `/setup` to verify) |

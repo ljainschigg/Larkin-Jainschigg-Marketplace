@@ -21,7 +21,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install linkcheck@claude-plugins
+/plugin install linkcheck@lj-marketplace
 ```
 
 ---
@@ -47,7 +47,7 @@ It then runs the scan with live progress, saves the full report to your chosen f
 
 | | |
 |---|---|
-| **Version** | 1.0.4 |
+| **Version** | 1.0.5 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Runtime** | Python via `uv` (dependencies declared inline in `linkcheck.py`) |

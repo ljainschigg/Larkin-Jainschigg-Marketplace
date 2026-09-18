@@ -1,6 +1,6 @@
 {
   "name": "discourse-tracker",
   "description": "Maintains a current-AI-discourse context file at ~/.claude/shared-context/current-discourse.md by doing a shallow weekly scan of frontier labs, practitioners, community signal, infrastructure news, and regulatory updates.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "skill"
 }

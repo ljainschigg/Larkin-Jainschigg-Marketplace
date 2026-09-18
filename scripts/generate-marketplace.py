@@ -11,7 +11,7 @@ import os
 import sys
 
 REPO = "https://github.com/ljainschigg/Larkin-Jainschigg-Marketplace.git"
-MARKETPLACE_NAME = "claude-plugins"
+MARKETPLACE_NAME = "lj-marketplace"
 PLUGINS_DIR = "plugins"
 # Canonical index, committed to main. Consumed by
 # `/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace`
@@ -57,7 +57,7 @@ def main():
 
     marketplace = {
         "name": MARKETPLACE_NAME,
-        "owner": {"name": "Claude Plugins Marketplace"},
+        "owner": {"name": "Larkin J."},
         "plugins": plugins
     }
 

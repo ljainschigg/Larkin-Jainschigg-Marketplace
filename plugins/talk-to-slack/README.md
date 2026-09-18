@@ -23,7 +23,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install talk-to-slack@claude-plugins
+/plugin install talk-to-slack@lj-marketplace
 ```
 
 ## Use
@@ -56,7 +56,7 @@ Each skill drives the built-in Slack connector directly (`slack_search_channels`
 
 | | |
 |---|---|
-| **Version** | 1.0.4 |
+| **Version** | 1.0.5 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Dependency** | Claude Code built-in Slack connector (authenticated) |

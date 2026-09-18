@@ -7,7 +7,7 @@ Generates a complete, correctly structured plugin directory from a plain-languag
 ## Install
 
 ```
-/plugin install plugin-scaffold@claude-plugins
+/plugin install plugin-scaffold@lj-marketplace
 ```
 
 ## Use
@@ -61,5 +61,5 @@ The generated files are stubs — they compile and pass format checks, but you n
 
 | | |
 |---|---|
-| **Version** | 1.2.5 |
+| **Version** | 1.2.6 |
 | **Maintained by** | Claude Plugins Marketplace |

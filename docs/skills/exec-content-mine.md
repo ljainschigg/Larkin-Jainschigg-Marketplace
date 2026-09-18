@@ -12,7 +12,7 @@ Turn an executive or SME conversation transcript into publishable content ideas:
 
 ```
 /plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
-/plugin install exec-content-mine@claude-plugins
+/plugin install exec-content-mine@lj-marketplace
 ```
 
 ## Use
@@ -31,6 +31,6 @@ The extraction logic is prompt-only and organization-neutral. It reads `org-cont
 
 | | |
 |---|---|
-| **Version** | 1.0.5 |
+| **Version** | 1.0.6 |
 | **Type** | skill |
 | **Maintained by** | Claude Plugins Marketplace |

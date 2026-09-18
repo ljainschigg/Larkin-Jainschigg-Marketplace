@@ -21,7 +21,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install example-mcp-python-skill@claude-plugins
+/plugin install example-mcp-python-skill@lj-marketplace
 ```
 
 After installing, run setup to confirm `uv` is present and the server responds:
@@ -52,7 +52,7 @@ Dependencies (`mcp`, `cowsay`) are declared inline in the script using [PEP 723]
 
 | | |
 |---|---|
-| **Version** | 1.1.4 |
+| **Version** | 1.1.5 |
 | **Runtime** | Python via `uv` |
 | **External dependency** | `cowsay` |
 | **Maintained by** | Claude Plugins Marketplace |

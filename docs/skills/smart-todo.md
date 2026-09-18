@@ -15,7 +15,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install smart-todo@claude-plugins
+/plugin install smart-todo@lj-marketplace
 ```
 
 ---
@@ -45,7 +45,7 @@ Priority and political weight together drive a composite urgency score that dete
 
 | | |
 |---|---|
-| **Version** | 1.0.5 |
+| **Version** | 1.0.6 |
 | **Tier** | platform |
 | **Maintained by** | Claude Plugins Marketplace |
 | **Data** | `~/.local/share/smart-todo/tasks.csv` |

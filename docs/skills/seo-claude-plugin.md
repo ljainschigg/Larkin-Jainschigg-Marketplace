@@ -24,7 +24,7 @@ If you haven't added the marketplace yet:
 Then install the plugin:
 
 ```
-/plugin install seo-claude-plugin@claude-plugins
+/plugin install seo-claude-plugin@lj-marketplace
 ```
 
 ## Use
@@ -69,7 +69,7 @@ Your brand facts, product knowledge, competitor lists, and reference documentati
 
 | | |
 |---|---|
-| **Version** | 1.2.3 |
+| **Version** | 1.2.4 |
 | **Type** | skill |
 | **Depends on** | `researcher` |
 | **Project data** | the current working directory |
