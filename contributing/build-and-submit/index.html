@@ -2037,10 +2037,10 @@
 <ul>
 <li><strong>Claude Code</strong> installed, with the marketplace added and authenticated. This is a <strong>private</strong> marketplace, so you need <strong>read access to the repo</strong> and git configured to authenticate — see <a href="../../#do-you-need-to-authenticate">the authentication section on the home page</a>. To <em>submit</em>, you also need permission to push a branch (collaborator access, or a fork).</li>
 <li><strong>The Plugin Dev Tools installed:</strong>
-  <div class="highlight"><pre><span></span><code>/plugin install plugin-scaffold@claude-plugins
-/plugin install plugin-docs-lint@claude-plugins
-/plugin install plugin-security-check@claude-plugins
-/plugin install submit-plugin@claude-plugins
+  <div class="highlight"><pre><span></span><code>/plugin install plugin-scaffold@Larkin-Jainschigg-Marketplace
+/plugin install plugin-docs-lint@Larkin-Jainschigg-Marketplace
+/plugin install plugin-security-check@Larkin-Jainschigg-Marketplace
+/plugin install submit-plugin@Larkin-Jainschigg-Marketplace
 </code></pre></div></li>
 <li><strong>Decide your plugin's <code>type</code>:</strong> <code>skill</code> (behavior only), <code>tool</code> (reaches an external service, needs credentials), or <code>app</code> (a person's instance composing skills/tools). This goes in the manifest and is checked at submit time.</li>
 </ul>
@@ -2075,7 +2075,7 @@
 <li><strong>CI runs automatically</strong> on the PR: <code>publish-check</code> (manifest conventions, no committed secrets, and that <code>.claude-plugin/marketplace.json</code> is regenerated and in sync) and the strict docs build. Fix anything they flag and push again.</li>
 <li><strong>A curator reviews</strong> the PR and the attached security report.</li>
 <li><strong>On merge to <code>main</code></strong>, the marketplace index regenerates and the docs site redeploys.</li>
-<li><strong>Users pick it up</strong> with <code>/plugin marketplace update claude-plugins</code>, then <code>/plugin install &lt;your-plugin&gt;@claude-plugins</code>.</li>
+<li><strong>Users pick it up</strong> with <code>/plugin marketplace update Larkin-Jainschigg-Marketplace</code>, then <code>/plugin install &lt;your-plugin&gt;@Larkin-Jainschigg-Marketplace</code>.</li>
 </ul>
 <p>Updating an existing plugin later? Any content change requires a <strong>semver version bump</strong> (bump-on-change) — CI fails a changed plugin that wasn't bumped. <a href="../../skills/plugin-dev-tools/plugin-diff/"><code>/plugin-diff</code></a> summarizes what changed between two versions.</p>
 <hr />

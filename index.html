@@ -2224,11 +2224,11 @@ invokes a skill. Many plugins contain exactly one skill with the same name as
 the plugin; more capable ones bundle several.</p>
 <p>You need <strong>Claude Code</strong> installed and running. Then:</p>
 <div class="highlight"><pre><span></span><code>/plugin marketplace add ljainschigg/Larkin-Jainschigg-Marketplace
-/plugin install &lt;plugin-name&gt;@claude-plugins
+/plugin install &lt;plugin-name&gt;@Larkin-Jainschigg-Marketplace
 </code></pre></div>
 <p>You only need to add the marketplace once. To see what is available, run
 <code>/plugin list</code>; to pick up new and updated plugins later, run
-<code>/plugin marketplace update claude-plugins</code> and reinstall the ones you want.</p>
+<code>/plugin marketplace update Larkin-Jainschigg-Marketplace</code> and reinstall the ones you want.</p>
 <h3 id="do-you-need-to-authenticate">Do you need to authenticate?<a class="headerlink" href="#do-you-need-to-authenticate" title="Permanent link">#</a></h3>
 <p>Adding the marketplace and installing plugins both <code>git clone</code> the
 <code>ljainschigg/Larkin-Jainschigg-Marketplace</code> repository. Whether you need to set
@@ -2279,7 +2279,7 @@ marketplace's HTTPS clone URLs over your existing SSH key:</p>
 <p>Read access is enough for everything on this page — you never need write
 access to install or use plugins. If a background auto-update of the
 marketplace ever fails on a private repo, just run
-<code>/plugin marketplace update claude-plugins</code> manually, or set
+<code>/plugin marketplace update Larkin-Jainschigg-Marketplace</code> manually, or set
 <code>CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1</code> in your environment.</p>
 </div>
 <hr />

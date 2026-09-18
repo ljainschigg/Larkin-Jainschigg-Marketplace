@@ -2011,8 +2011,8 @@
 <p>This is the correct pattern for plugins that need structured data manipulation, file operations, or reusable logic — without the overhead of a full MCP server.</p>
 <hr />
 <h2 id="the-claude_plugin_root-variable">The <code>${CLAUDE_PLUGIN_ROOT}</code> variable<a class="headerlink" href="#the-claude_plugin_root-variable" title="Permanent link">#</a></h2>
-<p><code>${CLAUDE_PLUGIN_ROOT}</code> expands to the plugin's installation path at runtime (e.g. <code>~/.claude/plugins/cache/claude-plugins/&lt;plugin-name&gt;/1.0.0</code>). Use it whenever a <code>SKILL.md</code> or <code>.mcp.json</code> needs to reference a file bundled with the plugin.</p>
-<p>Similarly, <code>${CLAUDE_PLUGIN_DATA}</code> expands to a writable per-plugin data directory (<code>~/.claude/plugins/data/&lt;plugin-name&gt;-claude-plugins</code>). Use it for state that should persist across sessions — task lists, caches, user preferences.</p>
+<p><code>${CLAUDE_PLUGIN_ROOT}</code> expands to the plugin's installation path at runtime (e.g. <code>~/.claude/plugins/cache/Larkin-Jainschigg-Marketplace/&lt;plugin-name&gt;/1.0.0</code>). Use it whenever a <code>SKILL.md</code> or <code>.mcp.json</code> needs to reference a file bundled with the plugin.</p>
+<p>Similarly, <code>${CLAUDE_PLUGIN_DATA}</code> expands to a writable per-plugin data directory (<code>~/.claude/plugins/data/&lt;plugin-name&gt;-Larkin-Jainschigg-Marketplace</code>). Use it for state that should persist across sessions — task lists, caches, user preferences.</p>
 <hr />
 <h2 id="the-plugin-manifest">The plugin manifest<a class="headerlink" href="#the-plugin-manifest" title="Permanent link">#</a></h2>
 <p><code>.claude-plugin/plugin.json</code> is required in every plugin:</p>
