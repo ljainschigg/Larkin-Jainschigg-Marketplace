@@ -27,8 +27,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Keeps a running snapshot of current AI discourse on disk, so other skills
-    draw on what is happening now rather than stale training data.
+    Tracks what the AI industry is talking about right now and keeps a
+    summary on hand, so your writing and research stay current.
 
     [:material-arrow-right: Read more](skills/discourse-tracker.md)
 
@@ -36,8 +36,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Turns a channel's activity into a collaboration report, or reconstructs a
-    per-person briefing before you walk into a meeting.
+    Reads a Slack channel and writes up what your team is working on — or
+    briefs you on one colleague before a meeting with them.
 
     [:material-arrow-right: Read more](skills/talk-to-slack.md)
 
@@ -45,8 +45,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Mines an executive or SME interview transcript for article ideas and
-    quotable clip moments, tuned to your organization's positioning.
+    Reads an interview transcript and pulls out article ideas and quotable
+    moments, shaped around how your organization talks about itself.
 
     [:material-arrow-right: Read more](skills/exec-content-mine.md)
 
@@ -60,8 +60,9 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Critiques or rewrites outward-facing copy against your IR guidance and
-    your latest filing, so marketing language stays inside what you disclosed.
+    Checks marketing copy against your investor-relations guidance and latest
+    financial filing, flagging anything that claims more than you have
+    publicly disclosed.
 
     [:material-arrow-right: Read more](skills/ir-copy-check.md)
 
@@ -69,8 +70,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Runs a simulated focus group of researched personas to pressure-test
-    products, messaging, and positioning before you commit.
+    Runs a focus group with simulated participants built from published
+    audience research, so you can test a product or message early.
 
     [:material-arrow-right: Read more](skills/focus-group.md)
 
@@ -84,8 +85,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Takes a structured brief through research, drafting, and editing to a
-    complete, source-backed article.
+    Writes a search-optimized article from your brief, researching sources
+    and citing them as it drafts and edits.
 
     [:material-arrow-right: Read more](skills/seo-claude-plugin.md)
 
@@ -93,8 +94,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Transcribes video and audio to subtitles entirely on your machine with
-    Whisper — no upload, no API key.
+    Turns video and audio into subtitles and transcripts on your own machine.
+    Nothing is uploaded, and no API key is required.
 
     [:material-arrow-right: Read more](skills/subtitle-studio.md)
 
@@ -102,8 +103,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Turns rough notes into a clean, well-structured Markdown document without
-    inventing content that was not there.
+    Turns rough notes into a clean, well-organized document, tidying the
+    structure and formatting without adding anything you did not write.
 
     [:material-arrow-right: Read more](skills/markdown-doc-cleaner.md)
 
@@ -111,8 +112,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Scans a versioned MkDocs site for broken links and writes a report you can
-    act on.
+    Checks a documentation site for broken links and gives you a report of
+    what needs fixing.
 
     [:material-arrow-right: Read more](skills/linkcheck.md)
 
@@ -126,8 +127,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Discovers, fetches, and synthesizes real sources — with retrieval rules
-    that stop it thrashing on gated or dead pages.
+    Finds, reads, and summarizes real sources on a topic — and knows when to
+    move on from a paywalled or dead page instead of retrying it.
 
     [:material-arrow-right: Read more](skills/researcher.md)
 
@@ -135,8 +136,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Builds a citation-tracked knowledge base where every claim carries full
-    provenance: who said it, in what document, on what date.
+    Turns transcripts, documents, and notes into a searchable knowledge base
+    where every fact records who said it, where, and when.
 
     [:material-arrow-right: Read more](skills/karpathy-kb.md)
 
@@ -144,8 +145,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Retrieves PDFs from gated lead-gen landing pages, handling the access
-    forms that normally stop automation.
+    Downloads reports and whitepapers from sites that put them behind a
+    sign-up form, filling in the form for you.
 
     [:material-arrow-right: Read more](skills/get-pdfs.md)
 
@@ -159,8 +160,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Tracks food and biometrics against your own targets, with loose logging
-    and optional device sync. Ships no one's numbers but yours.
+    Tracks what you eat and your health readings against targets you set.
+    Describe meals in plain language — no weighing or calorie lookups.
 
     [:material-arrow-right: Read more](skills/diet.md)
 
@@ -168,8 +169,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Conversational to-do list: paste freeform text to capture tasks, then ask
-    what to do next.
+    A to-do list you talk to. Paste in messy notes to capture tasks, then ask
+    what you should work on next.
 
     [:material-arrow-right: Read more](skills/smart-todo.md)
 
@@ -177,8 +178,8 @@ tools to build your own. Add the marketplace once, then install what you need.
 
     ---
 
-    Provider-agnostic secret broker so plugins never hold your credentials —
-    keyring, `pass`, or file, your choice.
+    Keeps API keys and passwords for your other plugins in your system
+    keychain, so no plugin ever holds your credentials itself.
 
     [:material-arrow-right: Read more](skills/secret-resolver.md)
 
@@ -197,7 +198,8 @@ catch problems before you open a pull request.
 
     ---
 
-    Generates a correctly structured plugin directory from a description.
+    Describe the plugin you want, and it generates a correctly structured
+    starting point for you to build on.
 
     [:material-arrow-right: Read more](skills/plugin-dev-tools/plugin-scaffold.md)
 
@@ -205,7 +207,8 @@ catch problems before you open a pull request.
 
     ---
 
-    Deep inspection: compliance, security, blast radius, documentation quality.
+    Inspects a plugin for security problems, risky permissions, and
+    documentation gaps before you publish it.
 
     [:material-arrow-right: Read more](skills/plugin-dev-tools/plugin-security-check.md)
 
@@ -213,7 +216,8 @@ catch problems before you open a pull request.
 
     ---
 
-    Checks a README against the marketplace's documentation standards.
+    Checks that a plugin's README meets this marketplace's documentation
+    standards, and tells you what is missing.
 
     [:material-arrow-right: Read more](skills/plugin-dev-tools/plugin-docs-lint.md)
 
@@ -221,7 +225,8 @@ catch problems before you open a pull request.
 
     ---
 
-    Plain-language summary of what changed between two plugin versions.
+    Explains in plain language what changed between two versions of a
+    plugin, so you know what you are upgrading to.
 
     [:material-arrow-right: Read more](skills/plugin-dev-tools/plugin-diff.md)
 
@@ -229,7 +234,8 @@ catch problems before you open a pull request.
 
     ---
 
-    Full submission: runs the security check, clones the repo, files the PR.
+    Submits your finished plugin: runs the security check, then opens the
+    pull request for you.
 
     [:material-arrow-right: Read more](skills/plugin-dev-tools/submit-plugin.md)
 
@@ -237,7 +243,8 @@ catch problems before you open a pull request.
 
     ---
 
-    Curator tool: walks every plugin in a repository and reports what fails.
+    Checks every plugin in a marketplace at once and reports which ones fall
+    short of the standards.
 
     [:material-arrow-right: Read more](skills/plugin-dev-tools/validate-marketplace.md)
 
