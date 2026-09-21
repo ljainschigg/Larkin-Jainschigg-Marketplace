@@ -1,3 +1,7 @@
+---
+description: "Check that a plugin's README meets this marketplace's documentation standards, and see what is missing."
+---
+
 # plugin-docs-lint
 
 Fast check that a plugin's `README.md` meets the documentation standards required for marketplace submission. Lighter-weight than [`plugin-security-check`](plugin-security-check.md) — useful to run frequently as you write, rather than waiting until the plugin is finished.

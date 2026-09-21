@@ -1,3 +1,7 @@
+---
+description: "Keep API keys and passwords for your other plugins in your system keychain, so no plugin ever holds your credentials itself."
+---
+
 # secret-resolver
 
 The platform's shared, per-user secret broker. Tools (Fitbit, Withings, Google, …) ask it for a credential by key instead of keeping secrets in their own files or the plugin directory. One place to store secrets; one place to revoke them; provider-agnostic so each machine can back it with whatever it has.

@@ -1,3 +1,7 @@
+---
+description: "Inspect a plugin for security problems, risky permissions and documentation gaps before you publish it."
+---
+
 # plugin-security-check
 
 Deep inspection of a plugin folder that evaluates format compliance, security risks, blast radius, and documentation quality. Produces a structured report with rated findings. Called automatically by [submit-plugin](submit-plugin.md), and useful to run at any point during development.

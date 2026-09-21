@@ -1,3 +1,7 @@
+---
+description: "Download reports and whitepapers from sites that put them behind a sign-up form, filling in the form for you."
+---
+
 # get-pdfs
 
 Downloads PDFs from gated lead-gen landing pages. Fills out access forms using your stored credentials, follows redirects and CDN hops, and saves files to `./resources/`. Also used internally by the `researcher` plugin for PDF retrieval.

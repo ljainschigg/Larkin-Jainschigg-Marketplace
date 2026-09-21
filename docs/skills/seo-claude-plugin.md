@@ -1,3 +1,7 @@
+---
+description: "Write a search-optimized article from your brief, researching sources and citing them as it drafts and edits."
+---
+
 # seo-claude-plugin
 
 Produces a complete, SEO-optimized article from a structured brief you supply. The workflow guides Claude through nine sequential steps: capturing the brief, establishing the brand perspective, defining a research brief, handing off to the researcher plugin, annotating the outline with stats, drafting, and two editing passes for sourced assertions and uniform voice.

@@ -1,3 +1,7 @@
+---
+description: "The end-to-end path from an idea to a plugin published in this marketplace: scaffold, build, verify, security-check and submit."
+---
+
 # Build and submit a plugin
 
 This is the end-to-end path from an idea to a plugin published in the marketplace. There are two routes:

@@ -1,3 +1,7 @@
+---
+description: "Check a documentation site for broken links and get a report of what needs fixing."
+---
+
 # linkcheck
 
 Scans a versioned MkDocs documentation site for broken links and saves a full report. Discovers all published versions via `versions.json`, enumerates pages from the navigation sidebar, checks every content link once (cached across versions), and reports broken links grouped by version with anchor text and the pages that reference them.

@@ -1,3 +1,7 @@
+---
+description: "Everything a Claude Code plugin needs - manifest, skills, credentials, personal data handling and setup checks."
+---
+
 # Plugin anatomy — what every plugin needs
 
 This is the canonical reference for the *shape* of a marketplace plugin: every concern a plugin addresses, whether it is **required** or **optional**, and how it's realized. Most plugins stub or omit the optional concerns — a one-skill prompt plugin touches only a handful of rows below. Nothing here is aspirational; each row is checked by the tooling or by review.

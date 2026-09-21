@@ -1,3 +1,7 @@
+---
+description: "Check every plugin in a marketplace at once and see which ones fall short of the standards."
+---
+
 # validate-marketplace
 
 Curator tool that walks every plugin in a marketplace repository and reports format compliance issues, missing required files, and documentation gaps. Run this before cutting a release, after accepting a batch of PRs, or any time you want a health check on the full catalog.

@@ -1,3 +1,7 @@
+---
+description: "Read a Slack channel and write up what your team is working on, or get briefed on one colleague before a meeting with them."
+---
+
 # talk-to-slack
 
 Generate reports from a Slack channel's activity using Claude Code's **built-in Slack connector** — no API keys, bot tokens, or Python dependencies to manage.

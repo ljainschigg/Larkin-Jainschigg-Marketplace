@@ -1,3 +1,7 @@
+---
+description: "Describe the plugin you want and generate a correctly structured starting point to build on."
+---
+
 # plugin-scaffold
 
 Generates a complete, correctly structured plugin directory from a plain-language description of what you want the plugin to do. Produces all required files with stubs pre-filled — so you start from a baseline that will pass format compliance checks rather than copying and adapting an example by hand.

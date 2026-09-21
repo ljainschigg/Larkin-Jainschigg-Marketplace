@@ -1,3 +1,7 @@
+---
+description: "A minimal working example of a Claude Code plugin backed by a Python MCP server - copy it as the starting point for your own."
+---
+
 # example-mcp-python-skill
 
 Demonstrates a skill backed by a Python MCP server. When invoked, it calls a running Python process via the Model Context Protocol and returns a cowsay greeting. Proof of life for the Python MCP plugin pattern.

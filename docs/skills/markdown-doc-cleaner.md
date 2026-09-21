@@ -1,3 +1,7 @@
+---
+description: "Turn rough notes into a clean, well-organized document, tidying structure and formatting without adding anything you did not write."
+---
+
 # markdown-doc-cleaner
 
 Turns rough notes into a clean, well-structured Markdown document with headings and bullet points.

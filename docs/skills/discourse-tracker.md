@@ -1,3 +1,7 @@
+---
+description: "Track what the AI industry is talking about right now, and keep a summary on hand so your writing and research stay current."
+---
+
 # discourse-tracker
 
 Maintains a shared AI discourse context file at `~/.claude/shared-context/current-discourse.md` by doing a fast, shallow scan of frontier labs, practitioners, community signal, infrastructure news, regulatory updates, and new product introductions. Run it weekly — it takes a few minutes and costs a fraction of a deep-research pass.

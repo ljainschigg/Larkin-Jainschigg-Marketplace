@@ -1,3 +1,7 @@
+---
+description: "See in plain language what changed between two versions of a plugin, so you know what you are upgrading to."
+---
+
 # plugin-diff
 
 Produces a plain-language summary of what changed between two versions of a plugin — in both code and behavior. Useful before upgrading an installed plugin, particularly for `extended`-tier plugins where understanding changes to blast radius and external service access matters.

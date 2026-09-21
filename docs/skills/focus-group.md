@@ -1,3 +1,7 @@
+---
+description: "Run a focus group with simulated participants built from published audience research, so you can test a product or message early."
+---
+
 # focus-group
 
 Run a simulated focus group or enterprise buying-committee evaluation to pre-flight products, messages, concepts, UI designs, or any stimulus before committing to real fieldwork.

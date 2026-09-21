@@ -1,3 +1,7 @@
+---
+description: "A minimal working example of a Claude Code plugin backed by a Node.js MCP server - copy it as the starting point for your own."
+---
+
 # example-mcp-node-skill
 
 Demonstrates a skill backed by a Node.js MCP server. When invoked, it calls a running Node.js process via the Model Context Protocol and returns a figlet ASCII art greeting. Proof of life for the Node.js MCP plugin pattern.

@@ -1,3 +1,7 @@
+---
+description: "Submit your finished plugin - runs the security check, then opens the pull request for you."
+---
+
 # submit-plugin
 
 Automates the full workflow for submitting a plugin to the plugins marketplace. Runs a security check, clones a fresh copy of the marketplace repository, creates a PR branch, moves files into the correct locations, validates the documentation build, and files a pull request whose description includes the full security review report.

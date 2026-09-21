@@ -1,3 +1,7 @@
+---
+description: "Find, read and summarize real sources on a topic, and move on from a paywalled or dead page instead of retrying it."
+---
+
 # researcher
 
 A Claude Code plugin for web research. Discovers and retrieves sources on any topic — including PDFs behind marketing lead-gen gates — and synthesizes findings into clean, readable output.

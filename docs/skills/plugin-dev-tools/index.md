@@ -1,3 +1,7 @@
+---
+description: "The tools for building, checking and submitting a plugin to this marketplace."
+---
+
 # Plugin Dev Tools
 
 Plugin Dev Tools are fully-validated platform skills for building, reviewing, and submitting plugins to this marketplace. They are maintained by the Claude Plugins Marketplace and are the recommended way to develop and contribute plugins.

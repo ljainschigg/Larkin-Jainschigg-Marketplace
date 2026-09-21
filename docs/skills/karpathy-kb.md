@@ -1,3 +1,7 @@
+---
+description: "Turn transcripts, documents and notes into a searchable knowledge base where every fact records who said it, where, and when."
+---
+
 # karpathy-kb
 
 Sets up and maintains a citation-tracked local knowledge base using the Karpathy-loop workflow. Compile raw sources — transcripts, Slack exports, presentation decks, design docs — into a structured wiki where every factual claim carries full provenance: who said it, in what document, on what date. Query it with full attribution, review conflicts, elicit missing tacit knowledge, and keep it structurally clean.

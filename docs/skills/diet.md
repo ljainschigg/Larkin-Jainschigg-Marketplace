@@ -1,3 +1,7 @@
+---
+description: "Track what you eat and your health readings against targets you set. Describe meals in plain language - no weighing or calorie lookups."
+---
+
 # diet — health-behavior tracking engine
 
 A person-neutral Claude Code plugin for tracking food intake and biometric readings against **your own** health targets — with loose, low-burden logging, a self-correcting portion vocabulary, and optional device sync. The engine ships no one's numbers or foods; all personalization lives in your instance's config files.

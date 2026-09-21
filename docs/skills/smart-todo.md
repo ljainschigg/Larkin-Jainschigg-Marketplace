@@ -1,3 +1,7 @@
+---
+description: "A to-do list you talk to. Paste in messy notes to capture tasks, then ask what you should work on next."
+---
+
 # smart-todo
 
 A conversational to-do list manager for Claude Code. Paste freeform text from anywhere — emails, Slack, meeting notes, browser tabs — and Claude extracts structured tasks, stores them in a local CSV, and answers natural-language questions about what to do next.

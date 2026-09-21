@@ -1,3 +1,7 @@
+---
+description: "Turn video and audio into subtitles and transcripts on your own machine. Nothing is uploaded, and no API key is required."
+---
+
 # subtitle-studio
 
 A Claude Code plugin that turns local video and audio into subtitles and transcripts — entirely **on your machine**. Transcription runs through Whisper (`faster-whisper`); nothing is uploaded and no API key is required.

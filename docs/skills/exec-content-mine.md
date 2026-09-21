@@ -1,3 +1,7 @@
+---
+description: "Read an interview transcript and pull out article ideas and quotable moments, shaped around how your organization talks about itself."
+---
+
 # exec-content-mine
 
 Turn an executive or SME conversation transcript into publishable content ideas: provocative article concepts and quotable social-media clip moments — tuned to *your* organization's strategy, products, and voice. Person/org-neutral engine; your specifics live in instance config, never in the plugin.

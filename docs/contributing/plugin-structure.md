@@ -1,3 +1,7 @@
+---
+description: "The directory layout a Claude Code plugin must follow, and the rules the loader enforces."
+---
+
 # Plugin directory structure
 
 Every plugin in this marketplace is a directory with a fixed structure. The plugin loader validates this structure on install — unknown top-level directories cause a load error.

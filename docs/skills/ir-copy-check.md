@@ -1,3 +1,7 @@
+---
+description: "Check marketing copy against your investor-relations guidance and latest financial filing, flagging anything that overstates what you disclosed."
+---
+
 # ir-copy-check
 
 Investor-relations copy check. When a brand is part of a public company's group, its outward-facing marketing content is attributable to that company, and content that misstates a figure or undermines the investor narrative creates real financial and reputational risk. This plugin reviews and rewrites that content against **resource documents you supply** — messaging and IR guidance, and a filed Form 10-K — and cites your resources for every finding.

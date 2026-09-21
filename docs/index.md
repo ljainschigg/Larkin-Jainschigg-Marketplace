@@ -1,6 +1,7 @@
 ---
 hide:
   - navigation
+description: "Twenty-four Claude Code plugins for executive intelligence, research, content and building your own. Add the marketplace once, then install what you need."
 ---
 
 # Larkin J.'s Marketplace

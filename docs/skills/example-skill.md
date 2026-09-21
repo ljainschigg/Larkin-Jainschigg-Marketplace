@@ -1,3 +1,7 @@
+---
+description: "The smallest possible Claude Code plugin. Copy it to see the required structure before building something real."
+---
+
 # example-skill
 
 A placeholder skill used to validate the Claude Plugins Marketplace pipeline.
